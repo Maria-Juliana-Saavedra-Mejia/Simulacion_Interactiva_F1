@@ -1,0 +1,370 @@
+@import url(./fonts.css);
+body, html{
+      background-color: #FFFFFF;
+}
+header{
+      z-index: initial
+}
+.logoF1{
+      position: absolute;
+      width: 10vw;
+      left: 6vw;
+}
+.circuitos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.8vw;
+      left: 20vw;
+      top: 0.5vw;
+      text-decoration: none;
+}
+.escuderias{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.8vw;
+      left: 35vw;
+      top: 0.5vw;
+      text-decoration: none;
+}
+.pilotos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.8vw;
+      left: 50vw;
+      top: 0.5vw;
+      text-decoration: none;
+}
+.vehiculos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.8vw;
+      left: 65vw;
+      top: 0.5vw;
+      text-decoration: none;
+}
+.simulacion{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.8vw;
+      left: 80vw;
+      top: 0.5vw;
+      text-decoration: none;
+}
+.circuitos:hover,
+.escuderias:hover,
+.pilotos:hover,
+.vehiculos:hover,
+.simulacion:hover {
+    color: red;
+}
+.españa{
+      position: absolute;
+      width: 40vw;
+      height: 30vw;
+      left: 48vw;
+      top: 8vw;
+}
+.titulo{
+      position: absolute;
+      font-family: 'semi-bold';
+      top: 8vw;
+      left: 8vw;
+      font-size: 2.3vw;
+}
+.circuito{
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.9vw;
+      top: 12vw;
+      left: 10vw;
+}
+.info{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.9vw;
+      top: 16vw;
+      left: 15vw;
+}
+.boton{
+      position: absolute;
+      font-size: 1.5vw;
+      font-family: 'ligth';
+      top: 30vw;
+      left: 15vw;
+      border: 0.1vw solid black;
+      color: white;
+      background-color: #B80000;
+      border-radius: 5vw;
+      width: 15vw;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 
+      0 6px 10px rgba(86, 150, 223, 0.3);
+}
+.ultimos{
+      position: absolute;
+      font-family: 'semi-bold';
+      top: 35vw;
+      left: 8vw;
+      font-size: 2.3vw;
+}
+.granPremioMonaco{
+      position: absolute;
+      top: 43vw;
+      border: 0.12vw solid black;
+      width: 80vw;
+      height: 20vw;
+      left: 8vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      border-bottom-left-radius: 2vw;
+}
+.tituloGran{
+      position: absolute;
+      font-family: 'semi-bold';
+      top: 0vw;
+      left: 2vw;
+      font-size: 2vw;  
+}
+.location{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 2vw;
+      left: 2vw;
+      color: #524F4F;
+}
+.carro{
+      position: absolute;
+      width: 13vw;
+      top: 1vw;
+      left: 65vw;
+}
+.primero{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 8vw;
+      left: 13vw;
+      color: #524F4F;
+}
+.segundo{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 8vw;
+      left: 38vw;
+      color: #524F4F; 
+}
+.tercero{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 8vw;
+      left: 66vw;
+      color: #524F4F;
+}
+.max{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 11vw;
+      left: 11.5vw;
+      color: black;
+}
+.red{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.5vw;
+      top: 14vw;
+      left: 13vw;
+      color: #524F4F;
+}
+.charles{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 11vw;
+      left: 38vw;
+      color: black;
+}
+.Ferrari{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.5vw;
+      top: 14vw;
+      left: 42vw;
+      color: #524F4F;
+}
+.lewis{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.8vw;
+      top: 11vw;
+      left: 65vw;
+      color: black;
+}
+.Mercedes{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.5vw;
+      top: 14vw;
+      left: 68vw;
+      color: #524F4F;
+}
+.uno{
+      position: absolute;
+      top: 11.5vw;
+      left: 3vw;
+      width: 5.5vw;
+}
+.dos{
+      position: absolute;
+      top: 11.5vw;
+      left: 30vw;
+      width: 5.5vw;
+}
+.tres{
+      position: absolute;
+      top: 11.5vw;
+      left: 57vw;
+      width: 5.5vw;
+}
+.news{
+      position: absolute;
+      font-family: 'semi-bold';
+      top: 65vw;
+      left: 8vw;
+      font-size: 2.3vw;
+}
+.n1{
+      position: absolute;
+      top: 75vw;
+      left: 4vw;
+      border: 0.14vw solid black;
+      width: 28vw;
+      height: 23vw;
+      border-top-left-radius: 3vw;
+      border-top-right-radius: 3vw;
+      border-bottom-right-radius: 3vw;
+      border-bottom-left-radius: 3vw;
+}
+.IMG1{
+      position: absolute;
+      width: 28vw;
+      top: 0vw;
+      
+}
+.fecha1{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.56vw;
+      color: black;
+      top: 13vw;
+      left: 1vw;
+}
+.text1{
+      text-align: left;
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.55vw;
+      color: black;
+      top: 15vw;
+      left: 1vw;
+}
+.n2{
+      position: absolute;
+      top: 75vw;
+      left: 35vw;
+      border: 0.14vw solid black;
+      width: 28vw;
+      height: 23vw;
+      border-top-left-radius: 3vw;
+      border-top-right-radius: 3vw;
+      border-bottom-right-radius: 3vw;
+      border-bottom-left-radius: 3vw;
+}
+.IMG2{
+      position: absolute;
+      width: 28vw;
+      top: 0vw;
+      
+}
+.fecha2{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.56vw;
+      color: black;
+      top: 13vw;
+      left: 1vw;
+}
+.text2{
+      text-align: left;
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.55vw;
+      color: black;
+      top: 15vw;
+      left: 1vw;
+}
+.n3{
+      position: absolute;
+      top: 75vw;
+      left: 66vw;
+      border: 0.14vw solid black;
+      width: 28vw;
+      height: 23vw;
+      border-top-left-radius: 3vw;
+      border-top-right-radius: 3vw;
+      border-bottom-right-radius: 3vw;
+      border-bottom-left-radius: 3vw;
+}
+.IMG3{
+      position: absolute;
+      width: 28vw;
+      top: 0vw;
+}
+.fecha3{
+      text-align: center;
+      position: absolute;
+      font-family: 'ligth';
+      font-size: 1.56vw;
+      color: black;
+      top: 13vw;
+      left: 1vw;
+}
+.text3{
+      text-align: left;
+      position: absolute;
+      font-family: 'regular';
+      font-size: 1.55vw;
+      color: black;
+      top: 15vw;
+      left: 1vw;
+}
+.final{
+      position: absolute;
+      top: 100vw;  
+      left: 0vw;
+      width: 100vw;
+      height: 5vw;
+      background-color: black;
+      text-align: center;
+}
+.pieDePagina{
+      color: white;
+      font-family: 'regular';
+      font-size: 1.55vw;
+}
