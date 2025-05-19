@@ -18,6 +18,14 @@ En este repositorio se encuentra el proyecto de F1 relizado por las estudiantes 
 
 Para el correcto funcionamiento del presente se requiere la instalación de algún navegador web y el hipervínculo de las pagina web.
 
+Para Ingesar como usuario
+Usuario: Usuario
+Contraseña: campus2023
+
+Para Ingresar como Administrador
+Usuario: Administrador
+Contraseña: campus2023
+
 # **Explicación**
 
 > [**Index**]
