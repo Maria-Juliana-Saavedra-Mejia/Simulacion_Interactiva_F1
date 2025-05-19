@@ -19,3 +19,7 @@
     font-family:'semi-bold' ;
     src: url(../fonds/Kanit-SemiBold.ttf);
 }
+@font-face {
+    font-family:'extra-ligth' ;
+    src: url(../fonds/Kanit-ExtraLight.ttf);
+}
