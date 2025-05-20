@@ -1,9 +1,8 @@
 console.log("holiiiiiiiiiiii")
-
+let usuario = document.getElementById("user").value;
+let contraseña = document.getElementById("password").value;
 const nextPage = document.getElementById("boton");
 nextPage.addEventListener("click", function() {
-    usuario = document.getElementById("user").value;
-    contraseña = document.getElementById("password").value;
     if (usuario === "Usuario" && contraseña === "campus2023") {
         window.location.href = "../html/Usuario/paginaPrincipal.html"; 
     }
