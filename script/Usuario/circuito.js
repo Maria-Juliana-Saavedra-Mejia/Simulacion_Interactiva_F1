@@ -14,7 +14,7 @@ async function mostrarCircuitos() {
         <div>
             <img class="images" src="${img}"/>
             <h1 class="circuitNames">${nombre}</h1>
-        </div>
+            </div>
 `
     }
 }

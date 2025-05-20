@@ -1,0 +1,32 @@
+@import url(./fonts.css);
+.texto{
+    position: absolute;
+    font-family: 'extra-ligth';
+    top: 5vw;
+    left: 44vw;
+    font-size: 3vw;
+}
+.fecha{
+    position: absolute;
+    font-family: 'fechas';
+    top: 9vw;
+    left: 44.5vw;
+    font-size:5vw;
+    font-weight: 100;
+}
+#escuderiasApi{
+    position: absolute;
+    top: 20vw;
+    width: 2vw;
+    height:2vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 10vw;
+    margin: 3vw;
+}
+.images{
+    width: 25vw;
+    height:15vw;
+}
