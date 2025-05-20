@@ -11,7 +11,7 @@ async function mostrarCircuitos() {
         let nombre = escuderia.nombre;
         let img = escuderia.escudo;
         escuderiasc.innerHTML += `
-            <div>
+            <div class="escuderiasSeccion">
                 <img class="images" src="${img}"/>
                 <h1 class="escuderiaNames">${nombre}</h1>
             </div>

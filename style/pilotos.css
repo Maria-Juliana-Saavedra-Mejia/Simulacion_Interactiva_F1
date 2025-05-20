@@ -1,0 +1,16 @@
+@import url(./fonts.css);
+.texto{
+    position: absolute;
+    font-family: 'extra-ligth';
+    top: 5vw;
+    left: 45vw;
+    font-size: 3vw;
+}
+.fecha{
+    position: absolute;
+    font-family: 'fechas';
+    top: 9vw;
+    left: 43.5vw;
+    font-size:5vw;
+    font-weight: 100;
+}

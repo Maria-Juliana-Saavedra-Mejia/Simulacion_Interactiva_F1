@@ -15,18 +15,36 @@
     font-weight: 100;
 }
 #escuderiasApi{
+    left: 8vw;
     position: absolute;
     top: 20vw;
-    width: 2vw;
-    height:2vw;
+    width: 10vw;
+    height:10vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: center;
-    gap: 10vw;
-    margin: 3vw;
+    gap: 5vw;
+    margin:2vw;
 }
 .images{
-    width: 25vw;
+    width: 15vw;
     height:15vw;
+}
+.escuderiaNames{
+    font-family: 'ligth';
+    font-size: 2.5vw;
+}
+.escuderiasSeccion{
+    border: 0.1vw solid black;
+    width: 35vw;
+    height: 25vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    padding: 1vw;
+}
+.carro{
+    position: absolute;
 }

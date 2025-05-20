@@ -11,7 +11,7 @@ async function mostrarCircuitos() {
         let img = circuito.imagen;
         
         circuitos.innerHTML += `
-        <div>
+        <div class="cosita">
             <img class="images" src="${img}"/>
             <h1 class="circuitNames">${nombre}</h1>
             </div>
