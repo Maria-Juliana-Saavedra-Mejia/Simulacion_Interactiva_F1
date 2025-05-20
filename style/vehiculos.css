@@ -1,0 +1,33 @@
+@import url(./fonts.css);
+body,html{
+    background-color: black;
+}
+header{
+    background-color: white;
+    width: 100%;
+    height: 6vw;
+}
+#vehiculosApi{
+    position: absolute;
+    top: 10vw;
+    width: 2vw;
+    height:2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 8vw;
+    margin: 3vw;
+}
+.vehiculosSeccion{
+    width: 25vw;
+    height: 20vw;
+}
+.images{
+    width: 25vw;
+}
+.modelo{
+    color: white;
+    font-family: 'regular';
+    font-size: 2vw;
+}
