@@ -23,3 +23,7 @@
     font-family:'extra-ligth' ;
     src: url(../fonds/Kanit-ExtraLight.ttf);
 }
+@font-face {
+    font-family: 'fechas';
+    src: url(../fonds/Monoton-Regular.ttf);
+}
