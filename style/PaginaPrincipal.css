@@ -17,6 +17,7 @@ header{
       left: 20vw;
       top: 0.5vw;
       text-decoration: none;
+      color: black;
 }
 .escuderias{
       position: absolute;
@@ -25,6 +26,7 @@ header{
       left: 35vw;
       top: 0.5vw;
       text-decoration: none;
+      color: black;
 }
 .pilotos{
       position: absolute;
@@ -33,6 +35,7 @@ header{
       left: 50vw;
       top: 0.5vw;
       text-decoration: none;
+      color: black;
 }
 .vehiculos{
       position: absolute;
@@ -41,6 +44,7 @@ header{
       left: 65vw;
       top: 0.5vw;
       text-decoration: none;
+      color: black;
 }
 .simulacion{
       position: absolute;
@@ -49,6 +53,7 @@ header{
       left: 80vw;
       top: 0.5vw;
       text-decoration: none;
+      color: black;
 }
 .circuitos:hover,
 .escuderias:hover,
@@ -254,10 +259,10 @@ header{
       border: 0.14vw solid black;
       width: 28vw;
       height: 23vw;
-      border-top-left-radius: 3vw;
-      border-top-right-radius: 3vw;
-      border-bottom-right-radius: 3vw;
-      border-bottom-left-radius: 3vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      border-bottom-left-radius: 2vw;
 }
 .IMG1{
       position: absolute;
@@ -290,10 +295,10 @@ header{
       border: 0.14vw solid black;
       width: 28vw;
       height: 23vw;
-      border-top-left-radius: 3vw;
-      border-top-right-radius: 3vw;
-      border-bottom-right-radius: 3vw;
-      border-bottom-left-radius: 3vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      border-bottom-left-radius: 2vw;
 }
 .IMG2{
       position: absolute;
@@ -326,10 +331,10 @@ header{
       border: 0.14vw solid black;
       width: 28vw;
       height: 23vw;
-      border-top-left-radius: 3vw;
-      border-top-right-radius: 3vw;
-      border-bottom-right-radius: 3vw;
-      border-bottom-left-radius: 3vw;
+      border-top-left-radius: 2vw;
+      border-top-right-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+      border-bottom-left-radius: 2vw;
 }
 .IMG3{
       position: absolute;
