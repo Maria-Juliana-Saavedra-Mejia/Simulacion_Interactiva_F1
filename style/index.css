@@ -101,3 +101,65 @@ body, html{
     font-size: 1.5vw;
     font-family: 'regular';
 }
+@media screen and (min-width: 769px) {
+    .Login {
+        max-width: 500px;
+    }
+    
+    .titulo {
+        font-size: 1.7rem;
+    }
+    
+    .usuario, .contraseña {
+        font-size: 1.2rem;
+    }
+    
+    #user, #password, #boton {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Login {
+        padding: 2rem 1.5rem;
+    }
+    
+    .titulo {
+        font-size: 1.3rem;
+    }
+    
+    .usuario, .contraseña {
+        font-size: 1rem;
+    }
+    
+    #user, #password, #boton {
+        font-size: 0.9rem;
+    }
+    
+    #mesaje {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Login {
+        padding: 1.5rem 1rem;
+    }
+    
+    .titulo {
+        font-size: 1.1rem;
+    }
+    
+    .usuario, .contraseña {
+        font-size: 0.9rem;
+    }
+    
+    #user, #password, #boton {
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+    }
+    
+    #mesaje {
+        font-size: 0.8rem;
+    }
+}
