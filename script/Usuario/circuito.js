@@ -79,6 +79,7 @@ async function mostrarcircuitoIndividual(circuitoId, circuitos) {
                 </div>
                 
                 <h3 class="ganadoress">Ganadores por año</h3>
+                <h3 class="ganadorrrr">Ganadores</h3>
                 <div id="ganadoresCircuito" class="ganadores-container"></div>
                 
                 <button id="cerrarDetalle" class="btn-cerrar">Volver</button>
@@ -140,7 +141,6 @@ async function cargarGanadoresCircuito(circuito) {
                 );
                 
                 ganadoresContainer.innerHTML += `
-                <h3 class="ganadores">Ganadores</h3>
                     <div class="ganador-card">
                         <h3>${pilotoGanador ? pilotoGanador.nombre : 'Desconocido'}</h3>
                         <p>Año: ${ganador.temporada}</p>

@@ -43,7 +43,7 @@
     top: 13vw;
     left: 10vw;
     width: 80vw;
-    height: 100vw;
+    height: 80vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
@@ -84,90 +84,95 @@ button{
 .pais{
     position: absolute;
     left: 48vw;
-    top: 15vw;
+    top: 12vw;
     color: white;
     font-family: 'ligth';
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     width: 30vw;
 }
 .longitud{
     position: absolute;
     left: 48vw;
-    top: 18vw;
+    top: 15.5vw;
     color: white;
     font-family: 'ligth';
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     width: 30vw;
 }
 .vueltas{
     position: absolute;
     left: 48vw;
-    top: 21vw;
+    top: 19.5vw;
     color: white;
     font-family: 'ligth';
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     width: 30vw;
 }
 .descripcion{
     position: absolute;
     left: 48vw;
-    top: 24vw;
+    top: 23.5vw;
     color: white;
     font-family: 'ligth';
-    font-size: 1.3vw;
+    font-size: 1.8vw;
     width: 30vw;
 }
 .rapida{
     position: absolute;
-    top: 40vw;
+    top: 42vw;
     left: -15vw;
     color: white;
-    font-family: 'ligth';
+    font-family: 'regular';
     font-size: 2vw;
     width: 80vw;
     text-align: center;  
 }
 .vuelta-rapida{
     position: absolute;
-    top: 46vw;
+    top: 48vw;
     left: 10vw;
     color: white;
-    font-family: 'ligth';
-    font-size: 1.3vw;
+    font-family: 'regular';
+    font-size: 1.8vw;
 }
 .piloto-vuelta-rapida{
-    position: absolute;
-    top: 49vw;
-    left: 10vw;
-    color: white;
-    font-family: 'ligth'; 
-    font-size: 1.3vw;
-}
-.anio-vuelta-rapida{
     position: absolute;
     top: 52vw;
     left: 10vw;
     color: white;
-    font-family: 'ligth'; 
-    font-size: 1.3vw;
+    font-family: 'regular';
+    font-size: 1.8vw;
+}
+.anio-vuelta-rapida{
+    position: absolute;
+    top: 56vw;
+    left: 10vw;
+    color: white;
+    font-family: 'regular'; 
+    font-size: 1.8vw;
 }
 .ganador-card{
     display: grid;
-    width: 20vw;
+    width: 37vw;
+    height: 3vw;
     color: white;
     grid-template-columns: repeat(2, 1fr);
-    font-family: 'ligth'; 
-    font-size: 1vw;
+    font-family: 'extra-ligth'; 
+    font-size: 1.8vw;
     text-align: center;
 }
-.ganadores{
+.ganadorrrr{
     position: absolute;
-    top: 40vw;
-    left:15vw;
+    top:42vw;
+    left: 18vw;
     color: white;
-    font-family: 'ligth';
+    font-family: 'regular';
     font-size: 2vw;
     width: 80vw;
     text-align: center;   
-    font-weight: 600; 
+}
+.ganadores-container{
+    position: absolute;
+    top: 48vw;
+    left: 40vw;
 }
