@@ -41,12 +41,133 @@
     position: absolute;
     background-color: black;
     top: 13vw;
-    left: 25vw;
-    width: 50vw;
-    height: 40vw;
+    left: 10vw;
+    width: 80vw;
+    height: 100vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     border-bottom-left-radius: 2vw;
     align-items: center;
+}
+
+button{
+    position: absolute;
+    top: 3vw;
+    left: 65vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    width: 9vw;
+    height: 2.5vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+}
+.circuito-imagen{
+    position: absolute;
+    width: 40vw;
+    top: 15vw;
+    left: 5vw;
+}
+.nombre{
+    position: absolute;
+    top: 5vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 3vw;
+    width: 80vw;
+    text-align: center;
+}
+.pais{
+    position: absolute;
+    left: 48vw;
+    top: 15vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.3vw;
+    width: 30vw;
+}
+.longitud{
+    position: absolute;
+    left: 48vw;
+    top: 18vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.3vw;
+    width: 30vw;
+}
+.vueltas{
+    position: absolute;
+    left: 48vw;
+    top: 21vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.3vw;
+    width: 30vw;
+}
+.descripcion{
+    position: absolute;
+    left: 48vw;
+    top: 24vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.3vw;
+    width: 30vw;
+}
+.rapida{
+    position: absolute;
+    top: 40vw;
+    left: -15vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 2vw;
+    width: 80vw;
+    text-align: center;  
+}
+.vuelta-rapida{
+    position: absolute;
+    top: 46vw;
+    left: 10vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.3vw;
+}
+.piloto-vuelta-rapida{
+    position: absolute;
+    top: 49vw;
+    left: 10vw;
+    color: white;
+    font-family: 'ligth'; 
+    font-size: 1.3vw;
+}
+.anio-vuelta-rapida{
+    position: absolute;
+    top: 52vw;
+    left: 10vw;
+    color: white;
+    font-family: 'ligth'; 
+    font-size: 1.3vw;
+}
+.ganador-card{
+    display: grid;
+    width: 20vw;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'ligth'; 
+    font-size: 1vw;
+    text-align: center;
+}
+.ganadores{
+    position: absolute;
+    top: 40vw;
+    left:15vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 2vw;
+    width: 80vw;
+    text-align: center;   
+    font-weight: 600; 
 }
