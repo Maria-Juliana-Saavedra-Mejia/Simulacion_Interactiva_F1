@@ -31,3 +31,121 @@ header{
     font-family: 'regular';
     font-size: 2vw;
 }
+
+
+
+.vehiculo-detalle{
+    position: absolute;
+    top: 10vw;
+    left: 10vw;
+    background-color: white;
+    width: 80vw;
+    height: 100vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    align-items: center;
+}
+
+
+.imagesVentana{
+    position: absolute;
+    width: 40vw;
+    left: 20vw;
+    top: 5vw;
+}
+.modelos{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    top: 20vw;
+    left: 10vw;
+    text-align: center;
+}
+.equipo{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    top: 20vw;
+    left: 40vw;
+    text-align: center;
+}
+.motor{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    text-align: center;
+    top: 25vw;
+    left: 10vw;
+}
+.vmax{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    text-align: center;
+    top: 25vw;
+    left: 40vw;
+}
+.aceleracion{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    text-align: center;
+    top: 30vw;
+    left: 10vw;
+}
+.Rendimiento{
+    position: absolute;
+    font-family: 'regular';
+    font-size: 3vw;
+    text-align: center;
+    top: 38vw;
+    left: 30vw;
+}
+.Normal{
+    position: absolute;
+    top: 50vw;
+    left: 10vw;
+}
+.Agresiva{
+    position: absolute;
+    top: 50vw;
+    left: 30vw;
+}
+.Ahorro{
+    position: absolute;
+    top: 50vw;
+    right: 12vw;
+}
+.Conduccion{
+    font-family: 'ligth';
+    font-size: 1.8vw;
+}
+.Consumo{
+    font-family: 'ligth';
+    font-size: 1.8vw;
+}
+.Desgaste{
+    font-family: 'ligth';
+    font-size: 1.8vw;
+}
+p{
+    font-family: 'ligth';
+    font-size: 1.3vw;
+}
+button{
+    position: absolute;
+    top: 13vw;
+    left: 15vw;
+    font-family: 'regular';
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    width: 10vw;
+    height: 3vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+}

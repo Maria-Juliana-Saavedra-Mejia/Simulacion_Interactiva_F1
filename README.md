@@ -238,7 +238,7 @@ Se encuentra el codigo de JavaScript.
           "63",
           "87"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/mercedes-logo.png"
+        "escudo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Mercedes-Benz_Star.svg/1200px-Mercedes-Benz_Star.svg.png"
       },
       {
         "id": "2",
@@ -249,7 +249,7 @@ Se encuentra el codigo de JavaScript.
           "1",
           "32"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/red-bull-racing-logo.png"
+        "escudo": "https://i.pinimg.com/736x/94/09/9e/94099e6980e9854ff0cc6d84f2bc7ad1.jpg"
       },
       {
         "id": "3",
@@ -260,7 +260,7 @@ Se encuentra el codigo de JavaScript.
           "4",
           "81"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/mclaren-logo.png"
+        "escudo": "https://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/4140.png"
       },
       {
         "id": "4",
@@ -271,7 +271,7 @@ Se encuentra el codigo de JavaScript.
           "16",
           "44"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/ferrari-logo.png"
+        "escudo": "https://i.pinimg.com/736x/e9/e2/b1/e9e2b1d27b27c6ac12dc8174147a5516.jpg"
       },
       {
         "id": "5",
@@ -282,7 +282,7 @@ Se encuentra el codigo de JavaScript.
           "14",
           "18"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/aston-martin-logo.png"
+        "escudo": "https://d22fxaf9t8d39k.cloudfront.net/bc0760688cf40741751723b232a404751bc9de371eb2aec1e25e39dc22a3f4bb296785.png"
       },
       {
         "id": "6",
@@ -293,7 +293,7 @@ Se encuentra el codigo de JavaScript.
           "10",
           "55"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/alpine-logo.png"
+        "escudo": "https://brandlogos.net/wp-content/uploads/2022/08/alpine_logomark-logo_brandlogos.net_pzhvz.png"
       },
       {
         "id": "7",
@@ -304,7 +304,7 @@ Se encuentra el codigo de JavaScript.
           "23",
           "29"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/williams-logo.png"
+        "escudo": "https://styles.redditmedia.com/t5_31z23/styles/communityIcon_hpjo554d6oj81.png"
       },
       {
         "id": "8",
@@ -315,7 +315,7 @@ Se encuentra el codigo de JavaScript.
           "22",
           "40"
         ],
-        "escudo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXFmWldWOgpOhUb62amIA0QJ_zinECxETfQ&s"
+        "escudo": "https://sportsbase.io/images/gpfans/copy_205x205/3a5451141d8fe88c6959a15a9ba7e6a2b59e142c.png"
       },
       {
         "id": "9",
@@ -326,7 +326,7 @@ Se encuentra el codigo de JavaScript.
           "27",
           "50"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/kick-sauber-logo.png"
+        "escudo": "https://i.namu.wiki/i/M2DRCcTYlEVr82u-N5ggwF2VtxLxzEwqiouKWpQfWgUr2qTV_9BSNBwDZEInzcM6Y945X3YCpHoQZ8f0pC5TXQ.svg"
       },
       {
         "id": "10",
@@ -337,7 +337,7 @@ Se encuentra el codigo de JavaScript.
           "31",
           "38"
         ],
-        "escudo": "https://www.formula1.com/content/dam/fom-website/teams/2024/haas-f1-team-logo.png"
+        "escudo": "https://images.squarespace-cdn.com/content/v1/52ddf807e4b026c919e68972/9d177c57-9520-4b76-8def-0fc58ffb1557/MGHF1-icon.png"
       }
     ],
     "vehiculos": [
@@ -393,7 +393,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://www.renderhub.com/cactus3d/f1-mercedes-w16-2025/f1-mercedes-w16-2025-03.jpg"
+        "imagen": "https://mexicogp.s3.us-west-2.amazonaws.com/wp-content/uploads/2025/03/26053145/0001-mercedes-right-profile.png"
       },
       {
         "id": "2",
@@ -447,7 +447,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://img.redbull.com/images/c_crop,w_3840,h_1920,x_0,y_314/c_auto,w_1200,h_600/f_auto,q_auto/redbullcom/2024/2/15/vh0mgarrzx3qwqq58qdt/oracle-red-bull-racing-rb20-vista"
+        "imagen": "https://www.lego.com/cdn/cs/set/assets/bltca542b859ace5383/42206_Prod_en-gb.png"
       },
       {
         "id": "3",
@@ -501,7 +501,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://mclaren.bloomreach.io/cdn-cgi/image/width=680,height=460,fit=crop,quality=80,format=webp/delivery/resources/content/gallery/mclaren-racing/formula-1/2025/nsr/f1-75-live-m/web/mcl39_op_front3q_8k.jpg"
+        "imagen": "https://i.namu.wiki/i/u0Msh0x1_FH2BADNENXJ4DUCJ6JjT8mcedhZrMjFr5hSCKi2vfT0vxAhS-SFdOD855ntQd9OEAIHHyOGxJi4BA.webp"
       },
       {
         "id": "4",
@@ -609,7 +609,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://p.turbosquid.com/ts-thumb/Fh/LuBbnp/qi/amr3_0000_a/jpg/1678353643/600x600/fit_q87/b69630fce42317da06a939ebf6bf02c2dc93cae2/amr3_0000_a.jpg"
+        "imagen": "https://media.formula1.com/content/dam/fom-website/teams/2023/teamcar-astonmartin.png.transform/4col/image.png"
       },
       {
         "id": "6",
@@ -663,7 +663,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://www.renderhub.com/cactus3d/f1-alpine-a525-2025/f1-alpine-a525-2025-01.jpg"
+        "imagen": "https://mexicogp.s3.us-west-2.amazonaws.com/wp-content/uploads/2025/03/26053205/0008-alpine-right-profile.png"
       },
       {
         "id": "7",
@@ -717,7 +717,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://www.renderhub.com/cactus3d/f1-williams-fw46-2024/f1-williams-fw46-2024-01.jpg"
+        "imagen": "https://i0.wp.com/cordobacompeticion.com/wp-content/uploads/2024/10/f4731c19feeee456bcf40f7290233994c27f90fd-3840x2160-1-scaled.webp?ssl=1"
       },
       {
         "id": "8",
@@ -771,7 +771,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://www.miniatures-lyon.com/uploads/Capture_d__cran_2024-12-06_120408.png"
+        "imagen": "https://soymotor.com/sites/default/files/styles/team_desk/public/2024-02/silueta-rb-vcarb-01-soymotor.png.webp?itok=YO6MrY98"
       },
       {
         "id": "9",
@@ -825,7 +825,7 @@ Se encuentra el codigo de JavaScript.
             }
           }
         },
-        "imagen": "https://cdn.prod.website-files.com/614ec6c7a279c6706fabe285/670896291d420a7504948ea9_kick-sauber-f1-team-c44.png"
+        "imagen": "https://i.namu.wiki/i/ZW3GqENVTayf_H23V53vTG1pSgxH6rmXoijKlGT86acu-UpkCpqmmrDlXML5RVrvxb30oGrlMFQO_Cu4Som7_g.webp"
       },
       {
         "id": "10",
@@ -1650,38 +1650,6 @@ Se encuentra el codigo de JavaScript.
           }
         ],
         "imagen": "https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Qatar_Circuit.png"
-      },
-      {
-        "id": "25",
-        "nombre": "Circuito de Madrid",
-        "pais": "España",
-        "longitud_km": 5.474,
-        "vueltas": 56,
-        "descripcion": "El nuevo circuito semi-urbano de Madrid combina tramos callejeros con secciones permanentes. Su diseño innovador incluye cambios de elevación y curvas peraltadas, ofreciendo un desafío moderno en el corazón de la capital española.",
-        "record_vuelta": {
-          "tiempo": "1:23.865",
-          "piloto": "63",
-          "año": 2024
-        },
-        "ganadores": [
-          {
-            "temporada": 2021,
-            "piloto": "44"
-          },
-          {
-            "temporada": 2022,
-            "piloto": "16"
-          },
-          {
-            "temporada": 2023,
-            "piloto": "1"
-          },
-          {
-            "temporada": 2024,
-            "piloto": "16"
-          }
-        ],
-        "imagen": "https://gpticketstore.vshcdn.net/uploads/images/5378/f1-grand-prix-spain-madrid-2026-circuit-map-tickets.png"
       }
     ],
     "id": "1"
