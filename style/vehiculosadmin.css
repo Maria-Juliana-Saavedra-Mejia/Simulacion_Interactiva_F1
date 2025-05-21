@@ -148,3 +148,28 @@ button{
     border-bottom-right-radius: 2vw;
     border-bottom-left-radius: 2vw;
 }
+.pilotos-titulo{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    text-align: center;
+    top: 30vw;
+    left: 40vw;
+}
+.pilotos-container{
+    position: absolute;
+    font-family: 'ligth';
+    font-size: 2vw;
+    top: 30vw;
+    left: 47vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 28vw;
+}
+.piloto-nombre{
+    font-family: 'ligth';
+    font-size: 1.9vw;
+    text-align: center;
+    top: 0vw;
+    left: 10vw;
+}
