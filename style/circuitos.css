@@ -1,4 +1,5 @@
 @import url(./fonts.css);
+
 .texto{
     position: absolute;
     font-family: 'extra-ligth';
@@ -36,3 +37,16 @@
     font-size: 2.5vw;
 }
 
+#circuitoIndividual{
+    position: absolute;
+    background-color: black;
+    top: 13vw;
+    left: 25vw;
+    width: 50vw;
+    height: 40vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    align-items: center;
+}
