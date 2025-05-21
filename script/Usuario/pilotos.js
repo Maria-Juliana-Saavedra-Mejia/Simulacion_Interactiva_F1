@@ -42,9 +42,9 @@ async function mostrarPilotoIndividual(id, pilotos) {
                 <img src="${pilotoSeleccionado.foto}" class="imagesVentana">
                 <h2 class="nombre">${pilotoSeleccionado.nombre}</h2>
                 <p class="equipo">Equipo: ${pilotoSeleccionado.equipo}</p>
-                <p class="rol">Equipo: ${pilotoSeleccionado.rol}</p>
-                <p class="fn">Equipo: ${pilotoSeleccionado.fechaNacimiento}</p>
-                <p class="ln">Equipo: ${pilotoSeleccionado.lugarNacimiento}</p> 
+                <p class="rol">Rol: ${pilotoSeleccionado.rol}</p>
+                <p class="fn">Fecha de Nacimiento: ${pilotoSeleccionado.fechaNacimiento}</p>
+                <p class="ln">Lugar de Nacimiento: ${pilotoSeleccionado.lugarNacimiento}</p> 
                 <button id="cerrarDetalle" class="btn-cerrar">Cerrar</button>
             </div>
         `;
@@ -60,4 +60,11 @@ async function mostrarPilotoIndividual(id, pilotos) {
 }
 
 
-mostrarpilotos();
+document.addEventListener('DOMContentLoaded', function() {
+    let pilotoIndividual = document.getElementById("pilotosindividual");
+    if (pilotoIndividual) {
+        pilotoIndividual.style.display = "none";
+    }
+    
+    mostrarpilotos();
+});

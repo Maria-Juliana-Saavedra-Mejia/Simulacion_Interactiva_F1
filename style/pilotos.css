@@ -45,7 +45,7 @@
     width: 20vw;
     background-color: #000;
     color: white;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     padding: 3px 8px;
 
 }
@@ -114,24 +114,26 @@
 #pilotosindividual{
     position: absolute;
     background-color: black;
-    position: absolute;
     top: 8vw;
-    left: 10vw;
-    width: 80vw;
-    height: 100vw;
+    left: 30vw;
+    width: 50vw;
+    height: 40vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     border-bottom-left-radius: 2vw;
     align-items: center;
 }
-.nombre{
-
+.imagesVentana{
+    position: absolute;
+    top: 5vw;
+    width: 27vw;
+    left: -1vw;
 }
 button{
     position: absolute;
     top: 3vw;
-    left: 65vw;
+    left: 38vw;
     font-family: 'regular';
     font-size: 2vw;
     color: black;
@@ -142,4 +144,44 @@ button{
     border-top-right-radius: 2vw;
     border-bottom-right-radius: 2vw;
     border-bottom-left-radius: 2vw;
+}
+.nombre{
+    position: absolute;
+    color: white;
+    font-family: 'regular';
+    font-size: 2vw;
+    top: 8vw;
+    left: 25vw;
+}
+.equipo{
+    position: absolute;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.5vw;
+    top: 12vw;
+    left: 25vw;
+}
+.rol{
+    position: absolute;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.5vw;
+    top: 15vw;
+    left: 25vw;
+}
+.fn{
+    position: absolute;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.5vw;
+    top: 18vw;
+    left: 25vw;
+}
+.ln{
+    position: absolute;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.5vw;
+    top: 21vw;
+    left: 25vw;
 }
