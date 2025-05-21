@@ -114,8 +114,8 @@
 #pilotosindividual{
     position: absolute;
     background-color: black;
-    top: 13vw;
-    left: 25vw;
+    top: 8vw;
+    left: 30vw;
     width: 50vw;
     height: 40vw;
     border-top-left-radius: 2vw;
@@ -185,3 +185,178 @@ button{
     top: 21vw;
     left: 25vw;
 }
+@media screen and (max-width: 430px){
+
+    .logoF1 {
+        width: 25vw;
+        left: 36vw;
+        top: 2vw;
+        }
+        
+        
+        .circuitos {
+        font-size: 2.8vw;
+        left: 5vw;
+        top: 10vw;
+        }
+        
+        .escuderias {
+        font-size: 2.8vw;
+        left: vw;
+        top: 10vw;
+        }
+        
+        .pilotos {
+        font-size: 2.8vw;
+        left: 48vw;
+        top: 10vw;
+        }
+        
+        .vehiculos {
+        font-size: 2.8vw;
+        left: 63vw;
+        top: 10vw;
+        }
+        
+        .simulacion {
+        font-size: 2.8vw;
+        left: 80vw;
+        top: 10Vw;
+        }
+        @media (max-width: 430px) {
+            .texto {
+                top: 15vw;
+                left: 40vw;
+                font-size: 8vw;
+            }
+            
+            .fecha {
+                top: 22vw;
+                left: 38vw;
+                font-size: 10vw;
+            }
+            
+            #pilotosApi {
+                top: 45vw;
+                left: 0;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 15vw;
+                margin: 0;
+                padding: 5vw;
+            }
+            
+            .pilotosSeccion {
+                width: 90vw;
+                height: 100vw;
+                margin: 0.3 auto;
+            }
+            
+            .Breaking {
+                top: -2vw;
+                height: 8vw;
+                width: 80vw;
+                font-size: 5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .top-corner {
+                border-width: 15vw 15vw 0 0;
+            }
+            
+            .image {
+                top: -1vw;
+                right: 65vw;
+                width: 10vw;
+            }
+            
+            .images {
+                top: 10vw;
+                width: 90%;
+                left: 5%;
+                height: auto;
+            }
+            
+            .pilotosNames {
+                font-size: 6vw;
+                margin-top: 75vw;
+            }
+            
+            .pilotosequipos {
+                font-size: 5vw;
+                top: 85vw;
+                left: 20vw;
+                width: 50vw;
+            }
+            
+            .down-corner {
+                border-width: 0 0 15vw 15vw;
+            }
+            
+            #pilotosindividual {
+                top: 20vw;
+                left: 5vw;
+                width: 90vw;
+                height: 180vw;
+                border-radius: 5vw;
+            }
+            
+            .imagesVentana {
+                top: 20vw;
+                width: 80vw;
+                left: 5vw;
+            }
+            
+            button {
+                top: 5vw;
+                left: 5vw;
+                font-size: 5vw;
+                width: 30vw;
+                height: 10vw;
+                border-radius: 5vw;
+            }
+            
+            .nombre {
+                font-size: 7vw;
+                top: 110vw;
+                left: 5vw;
+                width: 80vw;
+                text-align: center;
+            }
+            
+            .equipo {
+                font-size: 5vw;
+                top: 125vw;
+                left: 5vw;
+                width: 80vw;
+                text-align: center;
+            }
+            
+            .rol {
+                font-size: 5vw;
+                top: 140vw;
+                left: 5vw;
+                width: 80vw;
+                text-align: center;
+            }
+            
+            .fn {
+                font-size: 5vw;
+                top: 155vw;
+                left: 5vw;
+                width: 80vw;
+                text-align: center;
+            }
+            
+            .ln {
+                font-size: 5vw;
+                top: 170vw;
+                left: 5vw;
+                width: 80vw;
+                text-align: center;
+            }
+        }
+    }

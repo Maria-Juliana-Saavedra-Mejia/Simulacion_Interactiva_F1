@@ -1,157 +1,202 @@
 @import url(./fonts.css);
-.texto{
-    position: absolute;
-    font-family: 'extra-ligth';
-    top: 5vw;
-    left: 44vw;
-    font-size: 3vw;
+
+/* Estilos base (escritorio) */
+.texto {
+  position: absolute;
+  font-family: "extra-ligth";
+  top: 5vw;
+  left: 44vw;
+  font-size: 3vw;
 }
-.fecha{
-    position: absolute;
-    font-family: 'fechas';
-    top: 9vw;
-    left: 44.5vw;
-    font-size:5vw;
-    font-weight: 100;
+
+.fecha {
+  position: absolute;
+  font-family: "fechas";
+  top: 9vw;
+  left: 44.5vw;
+  font-size: 5vw;
+  font-weight: 100;
 }
-#escuderiasApi{
-    left: 8vw;
-    position: absolute;
-    top: 20vw;
-    width: 10vw;
-    height:10vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+
+#escuderiasApi {
+  left: 10vw;
+  position: absolute;
+  top: 20vw;
+  width: 10vw;
+  height: 10vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 5vw;
+  margin: 4vw;
+}
+
+.images {
+  width: 15vw;
+  height: 15vw;
+}
+
+.escuderiaNames {
+  font-family: "ligth";
+  font-size: 2.5vw;
+}
+
+.escuderiasSeccion {
+  border: 0.1vw solid black;
+  width: 35vw;
+  height: 25vw;
+  border-radius: 2vw;
+  padding: 1vw;
+}
+
+.carro {
+  position: absolute;
+}
+
+#escuderiasIndividual {
+  position: absolute;
+  top: 20vw;
+  left: 10vW;
+  background-color: rgb(2, 2, 2);
+  width: 80vw;
+  height: 100vw;
+  border-radius: 1vw;
+  align-items: center;
+}
+
+.escuderia-logo {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  top: 12vw;
+  left: 5vw;
+}
+
+.nombre {
+  position: absolute;
+  top: 3vw;
+  font-family: "regular";
+  color: white;
+  font-size: 3vw;
+  left: 17vw;
+}
+
+.pais {
+  color: white;
+  font-family: "ligth";
+}
+
+.motor {
+  color: white;
+  font-family: "ligth";
+}
+
+.h3 {
+  color: white;
+  font-family: "regular";
+}
+
+#pilotosEscuderia {
+  color: white;
+}
+
+#cerrarDetalle {
+  color: black;
+  background-color: white;
+  font-family: "regular";
+}
+
+@media screen and (max-width: 430px) {
+  .texto {
+    top: 18vw;
+    left: 25vw;
+    font-size: 8vw;
+    width: 50vw;
     text-align: center;
-    gap: 5vw;
-    margin:2vw;
-}
-.images{
-    width: 15vw;
-    height:15vw;
-}
-.escuderiaNames{
-    font-family: 'ligth';
-    font-size: 2.5vw;
-}
-.escuderiasSeccion{
-    border: 0.1vw solid black;
-    width: 35vw;
-    height: 25vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-    padding: 1vw;
-}
-.carro{
-    position: absolute;
-}
+  }
 
-
-
-#escuderiasIndividual{
-    position: absolute;
-    top: 19vw;
-    left: 10vw;
-    background-color: black;
-    width: 80vw;
-    height: 65vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-    align-items: center;
+  .fecha {
+    top: 26vw;
+    left: 25vw;
+    font-size: 10vw;
+    width: 50vw;
     text-align: center;
-}
-.escuderia-logo{
-    position: absolute;
-    width: 10vw;
-    top: 12vw;
+  }
+
+  #escuderiasApi {
     left: 5vw;
-    background-color: white;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-}
-.nombre{
-    position: absolute;
-    top: 3vw;
-    font-family: 'regular';
-    color: white;
-    font-size: 3vw;
-    text-align: center;
+    top: 50vw;
+    width: 90vw;
+    grid-template-columns: 1fr;
+    gap: 15vw;
+  }
+
+  .images {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .escuderiaNames {
+    font-size: 6vw;
+    margin-top: 2vw;
+  }
+
+  .escuderiasSeccion {
+    width: 70vw;
+    height: 60vw;
+    border-width: 0.3vw;
+    padding: 6vw;
+    margin: 1 auto;
+  }
+
+  .carro {
     width: 80vw;
-}
-.pais{
-    position: absolute;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.5vw;
-    left: 25vw;
-    top: 17vw;
-}
-.motor{
-    position: absolute;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.5vw;
-    left: 25vw;
-    top: 12vw;
-}
+    height: auto;
+  }
 
-#cerrarDetalle{
-    color: black;
-    background-color: white;
-    font-family: 'regular';
-}
-.pilotoss{
-    position: absolute;
-    top: 23vw;
-    left: 37vw;
-    font-family: 'regular';
-    color: white;
-    font-size: 2vw;
-}
+  #escuderiasIndividual {
+    top: 20vw;
+    left: 20vw;
+    width: 90vw;
+    height: 200vw;
+  }
 
-#pilotosEscuderia{
-    position: absolute;
-    top: 30vw;
-    left: 10vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 60vw;
-    color: black;
-    font-family: 'ligth';
-    gap: 3vw;
-    
-}
-.piloto-foto{
-    width: 20vw;
-}
-.piloto-card{
-    background-color: white;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-    font-size: 1.5vw;
-}
-button{
-    position: absolute;
-    top: 3vw;
-    left: 65vw;
-    font-family: 'regular';
-    font-size: 1.5vw;
-    color: black;
-    background-color: white;
-    width: 10vw;
-    height: 2vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
+  .escuderia-logo {
+    width: 40vw;
+    height: 40vw;
+    top: 20vw;
+    left: 25vw;
+  }
+
+  .nombre {
+    top: 5vw;
+    font-size: 8vw;
+    left: 5vw;
+    width: 80vw;
     text-align: center;
+  }
+
+  .pais,
+  .motor,
+  .h3 {
+    font-size: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #pilotosEscuderia {
+    font-size: 5vw;
+    margin-top: 65vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #cerrarDetalle {
+    font-size: 5vw;
+    padding: 3vw 6vw;
+    border-radius: 2vw;
+    margin-top: 10vw;
+    margin-left: 30vw;
+  }
 }
