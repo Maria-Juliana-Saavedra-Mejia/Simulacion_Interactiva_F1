@@ -48,3 +48,54 @@
 .carro{
     position: absolute;
 }
+
+
+
+#escuderiasIndividual{
+    position: absolute;
+    top: 12vw;
+    left: 10vw;
+    background-color: black;
+    width: 80vw;
+    height: 100vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    align-items: center;
+}
+.escuderia-logo{
+    position: absolute;
+    width: 15vw;
+    height:15vw;
+    top: 12vw;
+    left: 5vw;
+}
+.nombre{
+    position: absolute;
+    top: 3vw;
+    font-family: 'regular';
+    color: white;
+    font-size: 3vw;
+    left: 17vw;
+}
+.pais{
+    color: white;
+    font-family: 'ligth';
+}
+.motor{
+    color: white;
+    font-family: 'ligth';
+}
+.h3{
+    color: white;
+    font-family: 'regular';
+}
+#pilotosEscuderia{
+    color: white;
+}
+#cerrarDetalle{
+    color: black;
+    background-color: white;
+    font-family: 'regular';
+}
