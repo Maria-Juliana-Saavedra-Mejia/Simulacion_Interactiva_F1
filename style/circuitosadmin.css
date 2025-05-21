@@ -1,0 +1,178 @@
+@import url(./fonts.css);
+
+.texto{
+    position: absolute;
+    font-family: 'extra-ligth';
+    top: 5vw;
+    left: 45vw;
+    font-size: 3vw;
+}
+.fecha{
+    position: absolute;
+    font-family: 'fechas';
+    top: 9vw;
+    left: 44.5vw;
+    font-size:5vw;
+    font-weight: 100;
+}
+#circuitosApi{
+    position: absolute;
+    top: 20vw;
+    width: 2vw;
+    height:2vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 10vw;
+    margin: 3vw;
+}
+.images{
+    width: 25vw;
+    height:15vw;
+}
+.circuitNames{
+    color: #B80000;
+    font-family: 'bold';
+    font-size: 2.5vw;
+}
+
+#circuitoIndividual{
+    position: absolute;
+    background-color: black;
+    top: 13vw;
+    left: 10vw;
+    width: 80vw;
+    height: 80vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    align-items: center;
+}
+
+button{
+    position: absolute;
+    top: 3vw;
+    left: 65vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+    color: black;
+    background-color: white;
+    width: 9vw;
+    height: 2.5vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+}
+.circuito-imagen{
+    position: absolute;
+    width: 40vw;
+    top: 15vw;
+    left: 5vw;
+}
+.nombre{
+    position: absolute;
+    top: 5vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 3vw;
+    width: 80vw;
+    text-align: center;
+}
+.pais{
+    position: absolute;
+    left: 48vw;
+    top: 12vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.8vw;
+    width: 30vw;
+}
+.longitud{
+    position: absolute;
+    left: 48vw;
+    top: 15.5vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.8vw;
+    width: 30vw;
+}
+.vueltas{
+    position: absolute;
+    left: 48vw;
+    top: 19.5vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.8vw;
+    width: 30vw;
+}
+.descripcion{
+    position: absolute;
+    left: 48vw;
+    top: 23.5vw;
+    color: white;
+    font-family: 'ligth';
+    font-size: 1.8vw;
+    width: 30vw;
+}
+.rapida{
+    position: absolute;
+    top: 42vw;
+    left: -15vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 2vw;
+    width: 80vw;
+    text-align: center;  
+}
+.vuelta-rapida{
+    position: absolute;
+    top: 48vw;
+    left: 10vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 1.8vw;
+}
+.piloto-vuelta-rapida{
+    position: absolute;
+    top: 52vw;
+    left: 10vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 1.8vw;
+}
+.anio-vuelta-rapida{
+    position: absolute;
+    top: 56vw;
+    left: 10vw;
+    color: white;
+    font-family: 'regular'; 
+    font-size: 1.8vw;
+}
+.ganador-card{
+    display: grid;
+    width: 37vw;
+    height: 3vw;
+    color: white;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'extra-ligth'; 
+    font-size: 1.8vw;
+    text-align: center;
+}
+.ganadorrrr{
+    position: absolute;
+    top:42vw;
+    left: 18vw;
+    color: white;
+    font-family: 'regular';
+    font-size: 2vw;
+    width: 80vw;
+    text-align: center;   
+}
+.ganadores-container{
+    position: absolute;
+    top: 48vw;
+    left: 40vw;
+}
