@@ -40,10 +40,10 @@ async function mostrarescuderiaIndividual(escuderiaId, escuderias) {
                 <p class="pais">País: ${escuderia.pais}</p>
                 <p class="motor">Motor: ${escuderia.motor}</p>
                 
-                <h3>Pilotos</h3>
+                <h3 class="pilotoss">Pilotos</h3>
                 <div id="pilotosEscuderia" class="pilotos-container"></div>
                 
-                <button id="cerrarDetalle" class="btn-cerrar">Volver a todas las escuderías</button>
+                <button id="cerrarDetalle" class="btn-cerrar">Volver</button>
             </div>
         `;
         
@@ -77,8 +77,7 @@ async function cargarPilotosEscuderia(escuderia) {
                         <img class="piloto-foto" src="${piloto.foto}" alt="${piloto.nombre}"/>
                         <h3>${piloto.nombre}</h3>
                         <p>Rol: ${piloto.rol || "Piloto"}</p>
-                        <p>Fecha de nacimiento: ${piloto.fechaNacimiento}</p>
-                        <p>Lugar de nacimiento: ${piloto.lugarNacimiento}</p>
+
                     </div>
                 `;
             });

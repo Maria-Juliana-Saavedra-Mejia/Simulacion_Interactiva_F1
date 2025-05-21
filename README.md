@@ -5,9 +5,9 @@ En este repositorio se encuentra el proyecto de F1 relizado por las estudiantes 
 
 | Modulo | Contenido |
 |--|--|
-| Html ||
+| Html |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/html|
 | img |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/img|
-| Script ||
+| Script |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/script|
 | Style |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/style|
 | Index |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/blob/master/index.html|
 | Figma |https://www.figma.com/design/309jldDRzeujuJZ9ZL8CAE/F1?node-id=1-3&t=mZDO8QSXFiOiMmRe-0|

@@ -1,4 +1,3 @@
-
 async function mostrarCircuitos() {
     console.log("holaaaaaa")
     let circuitos= document.getElementById("circuitosApi")
