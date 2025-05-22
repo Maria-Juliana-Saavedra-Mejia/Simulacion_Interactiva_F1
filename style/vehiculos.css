@@ -180,43 +180,40 @@ button{
     left: 10vw;
 }
 @media screen and (max-width: 430px) {
-
-    .logoF1 {
-        width: 70vw;
-        left: 37.5vw;
-        top: 4vw;
-        }
-        
-        
-        .circuitos {
-        font-size: 4vw;
+    .circuitos {
         left: 5vw;
         top: 12vw;
         }
         
-        .escuderias {
-        font-size: 2.8vw;
-        left: 25vw;
+    .escuderias {
+        left: 24vw;
         top: 12vw;
         }
         
-        .pilotos {
-        font-size: 2.8vw;
-        left: 45vw;
+    .pilotos {
+        left: 44vw;
         top: 12vw;
         }
         
-        .vehiculos {
-        font-size: 2.8vw;
-        left: 65vw;
+    .vehiculos {
+        left: 61vw;
         top: 12vw;
         }
         
-        .simulacion {
-        font-size: 2.8vw;
-        left: 85vw;
+    .simulacion {
+        left: 80vw;
         top: 12vw;
-        }}
+    }
+
+    header{
+            width: 95vw;
+            height: 20vw;
+        }
+    .logoF1{
+            width: 20vw;
+            left: 40vw;
+        }
+    }
 /* Media Queries */
 @media (max-width: 1200px) {
     /* Header remains the same as original */
