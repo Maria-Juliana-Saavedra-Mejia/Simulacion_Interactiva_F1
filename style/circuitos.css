@@ -41,8 +41,8 @@
     position: absolute;
     background-color: black;
     top: 13vw;
-    left: 10vw;
-    width: 80vw;
+    left: 5vw;
+    width: 90vw;
     height: 80vw;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
@@ -176,43 +176,136 @@ button{
     top: 48vw;
     left: 40vw;
 }
+
 @media screen and (max-width: 430px) {
     .texto {
-        top: 90px;
+        top: 20vw;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 25px;
+        font-size: 6vw;
         width: 100%;
         text-align: center;
     }
     .fecha {
-        top: 130px;
+        top: 30vw;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 34px;
+        font-size: 8vw;
         width: 80%;
         text-align: center;
     }
     
     #circuitosApi {
         position: relative;
-        top: 150px;
+        top: 45vw;
         width: 90%;
         height: auto;
         grid-template-columns: 1fr;
-        gap: 30px;
-        margin: 0 auto;
+        gap: 15vw;
+        margin: 5vw auto;
         left: 0;
     }
     
     .images {
-        width: 90%;
+        width: 70vw;
         height: auto;
         margin: 0 auto;
     }
     
     .circuitNames {
-        font-size: 18px;
-        margin-top: 10px;
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+    
+    #circuitoIndividual {
+        top: 20vw;
+        left: 5vw;
+        width: 90vw;
+        height: 200vw;
+    }
+    
+    button {
+        top: 5vw;
+        left: 5vw;
+        font-size: 4vw;
+        width: 25vw;
+        height: 8vw;
+    }
+    
+    .circuito-imagen {
+        width: 80vw;
+        top: 20vw;
+        left: 5vw;
+    }
+    
+    .nombre {
+        top: 10vw;
+        font-size: 6vw;
+        width: 90vw;
+    }
+    
+    .pais, .longitud, .vueltas, .descripcion {
+        left: 5vw;
+        width: 90vw;
+        font-size: 4vw;
+    }
+    
+    .pais {
+        top: 70vw;
+    }
+    
+    .longitud {
+        top: 80vw;
+    }
+    
+    .vueltas {
+        top: 90vw;
+    }
+    
+    .descripcion {
+        top: 100vw;
+    }
+    
+    .rapida {
+        top: 120vw;
+        left: 0;
+        font-size: 5vw;
+        width: 100%;
+    }
+    
+    .vuelta-rapida, .piloto-vuelta-rapida, .anio-vuelta-rapida {
+        left: 5vw;
+        font-size: 4vw;
+    }
+    
+    .vuelta-rapida {
+        top: 130vw;
+    }
+    
+    .piloto-vuelta-rapida {
+        top: 140vw;
+    }
+    
+    .anio-vuelta-rapida {
+        top: 150vw;
+    }
+    
+    .ganadorrrr {
+        top: 160vw;
+        left: 0;
+        font-size: 5vw;
+        width: 100%;
+    }
+    
+    .ganadores-container {
+        top: 170vw;
+        left: 5vw;
+        width: 90vw;
+    }
+    
+    .ganador-card {
+        width: 90vw;
+        height: 8vw;
+        font-size: 4vw;
     }
 }
