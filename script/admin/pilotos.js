@@ -20,6 +20,8 @@ async function mostrarpilotos() {
                 <h1 class="pilotosNames">${nombre}</h1>
                 <h1 class="pilotosequipos">${equipo}</h1>
                 <div class="down-corner"></div>
+                <img class="pencil" src="../../img/pencil.png"/>
+                <img class="trash" src="../../img/trash.png"/>
             </div>
         `;
     }

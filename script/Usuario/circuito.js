@@ -13,7 +13,8 @@ async function mostrarCircuitos() {
         <div class="cosita" idcircuito="${circuito.id}">
             <img class="images" src="${img}"/>
             <h1 class="circuitNames">${nombre}</h1>
-            </div>
+        </div>
+
 `
     }
     const botonesDetalles = document.querySelectorAll(".cosita");

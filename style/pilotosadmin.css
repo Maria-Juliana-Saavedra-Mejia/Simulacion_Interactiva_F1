@@ -185,3 +185,17 @@ button{
     top: 21vw;
     left: 25vw;
 }
+.pencil{
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
+    width: 3vw;
+
+}
+
+.trash{
+    position: absolute;
+    top: 9vw;
+    width: 3vw;
+    left: 15vw;
+}

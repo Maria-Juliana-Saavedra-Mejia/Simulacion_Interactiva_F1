@@ -155,3 +155,16 @@ button{
     border-bottom-left-radius: 2vw;
     text-align: center;
 }
+.pencil{
+    position: relative;
+    top: -20vw;
+    left: 14vw;
+    width: 3vw;
+}
+
+.trash{
+    position: relative;
+    top: -20vw;
+    left: 14vw;
+    width: 3vw;
+}

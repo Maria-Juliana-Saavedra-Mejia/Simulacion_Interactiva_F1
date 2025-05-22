@@ -14,6 +14,8 @@ async function mostrarescuderia() {
             <div class="escuderiasSeccion" idescuderia="${escuderia.id}">
                 <img class="images" src="${img}"/>
                 <h1 class="escuderiaNames">${nombre}</h1>
+                <img class="pencil" src="../../img/pencil.png"/>
+                <img class="trash" src="../../img/trash.png"/>
             </div>
         `;
     }

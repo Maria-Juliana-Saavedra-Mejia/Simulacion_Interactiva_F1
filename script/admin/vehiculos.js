@@ -12,6 +12,10 @@ async function mostrarVehiculos() {
         let modelo= vehiculos.modelo;
         vehiculo.innerHTML += `
             <div class="vehiculosSeccion" idCarro="${vehiculos.id}">
+                <div class="imagess">
+                    <img class="pencil" src="../../img/pencil.png"/>
+                    <img class="trash" src="../../img/trash.png"/>
+                </div>
                 <h1 class="modelo">Modelo: ${modelo}</h1>
                 <img class="images" src="${img}"/>
             </div>

@@ -37,142 +37,212 @@
     font-size: 2.5vw;
 }
 
-#circuitoIndividual{
+#circuitoIndividual {
     position: absolute;
-    background-color: black;
-    top: 13vw;
-    left: 10vw;
-    width: 80vw;
-    height: 80vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
-    align-items: center;
+    top: 8vw;
+    left: 20vw;
+    width: 60vw;
+    height: 76vw;
+    background-color:  black;
+    border-radius: 2vw;
 }
 
-button{
+.modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    padding: 3vw;
+    border-radius: 2vw;
+    overflow-y: auto;
+}
+
+.close-btn {
     position: absolute;
-    top: 3vw;
-    left: 65vw;
+    top: 1.5vw;
+    right: 2vw;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    font-size: 2.5vw;
+    color: white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.modal-content h2 {
+    color: white;
+    font-size: 2.5vw;
+    top: vw;
+    left: 20vw;
+    text-align: center;
+    font-family: 'regular';
+    font-size: 3.5vw;
+
+}
+
+.form-group {
+    margin-bottom: 1.5vw;
+}
+
+.form-group label {
+    width: 40vw;
+    display: block;
+    color: white;
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
     font-family: 'regular';
     font-size: 1.5vw;
-    color: black;
-    background-color: white;
-    width: 9vw;
-    height: 2.5vw;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    border-bottom-right-radius: 2vw;
-    border-bottom-left-radius: 2vw;
 }
-.circuito-imagen{
-    position: absolute;
-    width: 40vw;
-    top: 15vw;
-    left: 5vw;
-}
-.nombre{
-    position: absolute;
-    top: 5vw;
-    color: white;
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.8vw;
+    font-size: 1.1vw;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
     font-family: 'regular';
-    font-size: 3vw;
-    width: 80vw;
-    text-align: center;
+    font-size: 1.5vw;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
 }
-.pais{
-    position: absolute;
-    left: 48vw;
-    top: 12vw;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.8vw;
-    width: 30vw;
-}
-.longitud{
-    position: absolute;
-    left: 48vw;
-    top: 15.5vw;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.8vw;
-    width: 30vw;
-}
-.vueltas{
-    position: absolute;
-    left: 48vw;
-    top: 19.5vw;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.8vw;
-    width: 30vw;
-}
-.descripcion{
-    position: absolute;
-    left: 48vw;
-    top: 23.5vw;
-    color: white;
-    font-family: 'ligth';
-    font-size: 1.8vw;
-    width: 30vw;
-}
-.rapida{
-    position: absolute;
-    top: 42vw;
-    left: -15vw;
-    color: white;
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.2vw);
     font-family: 'regular';
-    font-size: 2vw;
-    width: 80vw;
-    text-align: center;  
+    font-size: 1.5vw;
 }
-.vuelta-rapida{
-    position: absolute;
-    top: 48vw;
-    left: 10vw;
-    color: white;
+
+.form-group textarea {
+    height: 6vw;
+    resize: vertical;
+    min-height: 4vw;
     font-family: 'regular';
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
-.piloto-vuelta-rapida{
+
+.record-inputs {
+    display: flex;
+    gap: 1vw;
+}
+
+.record-inputs input {
+    flex: 1;
+}
+
+.button-group {
     position: absolute;
-    top: 52vw;
-    left: 10vw;
-    color: white;
+    bottom: 2vw;
+    right: 3vw;
+    display: flex;
+    gap: 1vw;
     font-family: 'regular';
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
-.anio-vuelta-rapida{
-    position: absolute;
-    top: 56vw;
-    left: 10vw;
-    color: white;
-    font-family: 'regular'; 
-    font-size: 1.8vw;
-}
-.ganador-card{
-    display: grid;
-    width: 37vw;
-    height: 3vw;
-    color: white;
-    grid-template-columns: repeat(2, 1fr);
-    font-family: 'extra-ligth'; 
-    font-size: 1.8vw;
-    text-align: center;
-}
-.ganadorrrr{
-    position: absolute;
-    top:42vw;
-    left: 18vw;
-    color: white;
+
+.btn-cancel,
+.btn-save {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.8vw;
+    font-size: 1.2vw;
     font-family: 'regular';
-    font-size: 2vw;
-    width: 80vw;
-    text-align: center;   
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
 }
-.ganadores-container{
-    position: absolute;
-    top: 48vw;
-    left: 40vw;
+
+.btn-cancel {
+    background: rgba(108, 117, 125, 0.9);
+    color: white;
 }
+
+.btn-cancel:hover {
+    background: rgba(108, 117, 125, 1);
+    transform: translateY(-0.2vw);
+}
+
+.btn-save {
+    background: rgba(0, 123, 255, 0.9);
+    color: white;
+}
+
+.btn-save:hover {
+    background: rgba(0, 123, 255, 1);
+    transform: translateY(-0.2vw);
+}
+
+
+@media (max-width: 768px) {
+    #circuitoIndividual {
+        width: 90vw;
+        height: 85vh;
+    }
+    
+    .modal-content {
+        padding: 4vw;
+    }
+    
+    .modal-content h2 {
+        font-size: 4vw;
+    }
+    
+    .form-group label {
+        font-size: 2vw;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    
+    .close-btn {
+        font-size: 4vw;
+        width: 6vw;
+        height: 6vw;
+    }
+    
+    .btn-cancel,
+    .btn-save {
+        font-size: 2vw;
+        padding: 2vw 3vw;
+    }
+    
+    .record-inputs {
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+}
+.pencil{
+    top: 0vw;
+    width: 3vw;
+}
+
+.trash{
+    top: 0vw;
+    width: 3vw;
+}
+
+
+
+
+
+

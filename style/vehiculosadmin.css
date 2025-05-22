@@ -173,3 +173,16 @@ button{
     top: 0vw;
     left: 10vw;
 }
+.pencil{
+    top: 0vw;
+    width: 3vw;
+}
+
+.trash{
+    top: 0vw;
+    width: 3vw;
+}
+.imagess{
+    background-color: white;
+    width: 8vw;
+}

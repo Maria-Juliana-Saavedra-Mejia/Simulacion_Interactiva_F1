@@ -176,3 +176,43 @@ button{
     top: 48vw;
     left: 40vw;
 }
+@media screen and (max-width: 430px) {
+    .texto {
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .fecha {
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 34px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    #circuitosApi {
+        position: relative;
+        top: 150px;
+        width: 90%;
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 0 auto;
+        left: 0;
+    }
+    
+    .images {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .circuitNames {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}

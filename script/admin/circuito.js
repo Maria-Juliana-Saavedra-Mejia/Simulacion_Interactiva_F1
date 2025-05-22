@@ -1,160 +1,187 @@
+
 async function mostrarCircuitos() {
     console.log("holaaaaaa")
-    let circuitos= document.getElementById("circuitosApi")
-    const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
-    console.log(response.data.circuitos)
-    const data = response.data;
-    for (let i = 0; i < data.circuitos.length; i++) {
-        let circuito = data.circuitos[i];
-        let nombre = circuito.nombre;
-        let img = circuito.imagen;
+    let circuitos = document.getElementById("circuitosApi")    
+    try {
+        const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+        console.log(response.data.circuitos)
+        const data = response.data;
         
-        circuitos.innerHTML += `
-        <div class="cosita" idcircuito="${circuito.id}">
-            <img class="images" src="${img}"/>
-            <h1 class="circuitNames">${nombre}</h1>
+        for (let i = 0; i < data.circuitos.length; i++) {
+            let circuito = data.circuitos[i];
+            let nombre = circuito.nombre;
+            let img = circuito.imagen;
+            
+            circuitos.innerHTML += `
+            <div class="cosita" idcircuito="${circuito.id}">
+                <img class="pencil" src="../../img/pencil.png" onclick="editarCircuito('${circuito.id}')"/>
+                <img class="trash" src="../../img/trash.png" onclick="eliminarCircuito('${circuito.id}')"/>
+                <img class="images" src="${img}"/>
+                <h1 class="circuitNames">${nombre}</h1>
             </div>
-`
-    }
-    const botonesDetalles = document.querySelectorAll(".cosita");
-    botonesDetalles.forEach(circuitoDiv => {
-        circuitoDiv.addEventListener('click', function() {
-            const circuitoId = this.getAttribute('idcircuito');
-            mostrarcircuitoIndividual(circuitoId, data.circuitos);
-        });
-    });
-}
-
-
-async function mostrarcircuitoIndividual(circuitoId, circuitos) {
-    const circuito = circuitos.find(c => c.id === circuitoId);
-    const circuitoIndividual = document.getElementById("circuitoIndividual");
-    
-    if (circuitoIndividual) {
-        circuitoIndividual.innerHTML = `
-            <div class="circuito-detalle">
-                <h2 class="nombre">${circuito.nombre}</h2>
-                <img src="${circuito.imagen}" class="circuito-imagen">
-                <p class="pais">País: ${circuito.pais}</p>
-                <p class="longitud">Longitud: ${circuito.longitud_km} km</p>
-                <p class="vueltas">Vueltas: ${circuito.vueltas}</p>
-                <p class="descripcion">Descripción: ${circuito.descripcion}</p>
-                
-                <p class="vuelta-rapida">Vuelta más rápida: ${circuito.vuelta_rapida || 'No disponible'}</p>
-                <p class="piloto-vuelta-rapida">Piloto: ${circuito.piloto_vuelta_rapida || 'No disponible'}</p>
-                
-                <h3 class="ganadoress">Ganadores por año</h3>
-                <div id="ganadoresCircuito" class="ganadores-container"></div>
-                
-                <button id="cerrarDetalle" class="btn-cerrar">Volver</button>
-            </div>
-        `;
-        
-        circuitoIndividual.style.display = "block";
-        
-        document.getElementById("cerrarDetalle").addEventListener('click', function() {
-            circuitoIndividual.style.display = "none";
-        });
-        
-        await cargarGanadoresCircuito(circuito);
+            `
+        }
+    } catch (error) {
+        console.error("Error al cargar circuitos:", error);
     }
 }
 
-async function mostrarcircuitoIndividual(circuitoId, circuitos) {
-    const circuito = circuitos.find(c => c.id === circuitoId);
-    const circuitoIndividual = document.getElementById("circuitoIndividual");
-    
-    if (circuitoIndividual) {
-        circuitoIndividual.innerHTML = `
-            <div class="circuito-detalle">
-                <img src="${circuito.imagen}" class="circuito-imagen">
-                <h2 class="nombre">${circuito.nombre}</h2>
-                <p class="pais">País: ${circuito.pais}</p>
-                <p class="longitud">Longitud: ${circuito.longitud_km} km</p>
-                <p class="vueltas">Vueltas: ${circuito.vueltas}</p>
-                <p class="descripcion">Descripción: ${circuito.descripcion}</p>
-                
-                <div id="vueltaRapidaInfo" class="vuelta-rapida-container">
 
+async function eliminarCircuito(id) {
+    if (confirm("¿Estás seguro de que deseas eliminar este circuito?")) {
+        try {
+
+            const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+            const data = response.data;
+            
+            const circuitosActualizados = data.circuitos.filter(circuito => circuito.id !== id);
+            
+            await axios.put(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`, {
+                ...data,
+                circuitos: circuitosActualizados
+            });
+            
+            const elemento = document.querySelector(`[idcircuito="${id}"]`);
+            if (elemento) {
+                elemento.remove();
+            }
+            
+        } catch (error) {
+            console.log("Error al eliminar circuito:", error);
+
+        }
+    }
+}
+
+async function editarCircuito(id) {
+    try {
+        const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+        const data = response.data;
+        const circuito = data.circuitos.find(c => c.id === id);
+        
+        if (!circuito) {
+            alert("Circuito no encontrado");
+            return;
+        }
+        
+        const circuitoIndividual = document.getElementById('circuitoIndividual');
+        circuitoIndividual.style.display = 'block';
+        
+        circuitoIndividual.innerHTML = `
+            <div class="modal-content">
+                <button class="close-btn" onclick="cerrarCircuitoIndividual()">×</button>
+                <h2 class="editar">Editar Circuito</h2>
+                
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" id="editNombre" value="${circuito.nombre}">
                 </div>
                 
-                <h3 class="ganadoress">Ganadores por año</h3>
-                <h3 class="ganadorrrr">Ganadores</h3>
-                <div id="ganadoresCircuito" class="ganadores-container"></div>
+                <div class="form-group">
+                    <label>País:</label>
+                    <input type="text" id="editPais" value="${circuito.pais}">
+                </div>
                 
-                <button id="cerrarDetalle" class="btn-cerrar">Volver</button>
+                <div class="form-group">
+                    <label>Longitud (km):</label>
+                    <input type="number" step="0.001" id="editLongitud" value="${circuito.longitud_km}">
+                </div>
+                
+                <div class="form-group">
+                    <label>Número de vueltas:</label>
+                    <input type="number" id="editVueltas" value="${circuito.vueltas}">
+                </div>
+                
+                <div class="form-group">
+                    <label>Descripción:</label>
+                    <textarea id="editDescripcion">${circuito.descripcion}</textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>URL de la imagen:</label>
+                    <input type="url" id="editImagen" value="${circuito.imagen}">
+                </div>
+                
+                <div class="form-group">
+                    <label>Record de vuelta:</label>
+                    <div class="record-inputs">
+                        <input type="text" id="editRecordTiempo" value="${circuito.record_vuelta.tiempo}" placeholder="Tiempo (ej: 1:43.009)">
+                        <input type="text" id="editRecordPiloto" value="${circuito.record_vuelta.piloto}" placeholder="ID Piloto">
+                        <input type="number" id="editRecordAno" value="${circuito.record_vuelta.año}" placeholder="Año">
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn-cancel" onclick="cerrarCircuitoIndividual()">Cancelar</button>
+                    <button class="btn-save" onclick="guardarCircuito('${id}')">Guardar</button>
+                </div>
             </div>
         `;
         
-        circuitoIndividual.style.display = "block";
+        window.cerrarCircuitoIndividual = function() {
+            const circuitoIndividual = document.getElementById('circuitoIndividual');
+            circuitoIndividual.style.display = 'none';
+            circuitoIndividual.innerHTML = '';
+        };
         
-        document.getElementById("cerrarDetalle").addEventListener('click', function() {
-            circuitoIndividual.style.display = "none";
-        });
-        
-        await cargarGanadoresCircuito(circuito);
-        await cargarVueltaRapida(circuito);
-    }
-}
-
-
-async function cargarVueltaRapida(circuito) {
-    const vueltaRapidaContainer = document.getElementById("vueltaRapidaInfo");
-    
-    try {
-        const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
-        const todosLosPilotos = response.data.pilotos || [];
-        
-        if (circuito.record_vuelta) {
-            const pilotoId = circuito.record_vuelta.piloto;
-            const pilotoRecord = todosLosPilotos.find(piloto => piloto.id === pilotoId);
-            const nombrePiloto = pilotoRecord ? pilotoRecord.nombre : 'Desconocido';
-            
-            vueltaRapidaContainer.innerHTML = `
-                <h3 class="rapida">Vuelta más rápida</h3>
-                <p class="vuelta-rapida">Tiempo: ${circuito.record_vuelta.tiempo}</p>
-                <p class="piloto-vuelta-rapida">Piloto: ${nombrePiloto}</p>
-                <p class="anio-vuelta-rapida">Año: ${circuito.record_vuelta.año}</p>
-            `;
-        } else {
-            vueltaRapidaContainer.innerHTML = "<p>No hay información disponible sobre la vuelta más rápida.</p>";
-        }
     } catch (error) {
-        console.error("Error al cargar la información de vuelta más rápida:", error);
-        vueltaRapidaContainer.innerHTML = "<p>Error al cargar la información de vuelta más rápida.</p>";
+        console.error("Error al cargar datos del circuito:", error);
+        alert("Error al cargar los datos del circuito");
     }
-}
 
-async function cargarGanadoresCircuito(circuito) {
-    const ganadoresContainer = document.getElementById("ganadoresCircuito");
-    
+async function guardarCircuito(id) {
     try {
-        const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
-        const todosLosPilotos = response.data.pilotos || [];
+        const nombre = document.getElementById('editNombre').value;
+        const pais = document.getElementById('editPais').value;
+        const longitud = parseFloat(document.getElementById('editLongitud').value);
+        const vueltas = parseInt(document.getElementById('editVueltas').value);
+        const descripcion = document.getElementById('editDescripcion').value;
+        const imagen = document.getElementById('editImagen').value;
+        const recordTiempo = document.getElementById('editRecordTiempo').value;
+        const recordPiloto = document.getElementById('editRecordPiloto').value;
+        const recordAno = parseInt(document.getElementById('editRecordAno').value);
         
-        if (circuito.ganadores && circuito.ganadores.length > 0) {
-            ganadoresContainer.innerHTML = '';
-            
-            circuito.ganadores.forEach(ganador => {
-                const pilotoGanador = todosLosPilotos.find(piloto => 
-                    piloto.id === ganador.piloto
-                );
-                
-                ganadoresContainer.innerHTML += `
-                    <div class="ganador-card">
-                        <h3>${pilotoGanador ? pilotoGanador.nombre : 'Desconocido'}</h3>
-                        <p>Año: ${ganador.temporada}</p>
-                    </div>
-                `;
-            });
-        } else {
-            ganadoresContainer.innerHTML = "<p>No hay información disponible sobre los ganadores.</p>";
+        if (!nombre || !pais || !longitud || !vueltas || !descripcion) {
+            alert("Por favor completa todos los campos obligatorios");
+            return;
         }
+        
+        const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+        const data = response.data;
+        
+        const circuitoIndex = data.circuitos.findIndex(c => c.id === id);
+        if (circuitoIndex === -1) {
+            alert("Circuito no encontrado");
+            return;
+        }
+        
+        data.circuitos[circuitoIndex] = {
+            ...data.circuitos[circuitoIndex],
+            nombre: nombre,
+            pais: pais,
+            longitud_km: longitud,
+            vueltas: vueltas,
+            descripcion: descripcion,
+            imagen: imagen,
+            record_vuelta: {
+                tiempo: recordTiempo,
+                piloto: recordPiloto,
+                año: recordAno
+            }
+        };
+        
+        await axios.put(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`, data);
+        
+        alert("Circuito actualizado correctamente");
+        cerrarModal();
+        
+        mostrarCircuitos();
+        
     } catch (error) {
-        console.error("Error al cargar los ganadores:", error);
-        ganadoresContainer.innerHTML = "<p>Error al cargar la información de los ganadores.</p>";
+        console.error("Error al guardar circuito:", error);
+        alert("Error al guardar los cambios");
     }
-}
+}}
 
 document.addEventListener('DOMContentLoaded', function() {
     let circuitoIndividual = document.getElementById("circuitoIndividual");
