@@ -13,55 +13,52 @@ async function mostrarVehiculos() {
         vehiculo.innerHTML += `
             <div class="vehiculosSeccion" idCarro="${vehiculos.id}">
                 <div class="imagess">
-                    <img class="pencil" src="../../img/pencil.png"/>
-                    <img class="trash" src="../../img/trash.png"/>
+                    <img class="pencil" src="../../img/pencil.png" onclick="editarVehiculo('${vehiculos.id}')"/>
+                    <img class="trash" src="../../img/trash.png" onclick="eliminarVehiculo('${vehiculos.id}')"/>
                 </div>
                 <h1 class="modelo">Modelo: ${modelo}</h1>
                 <img class="images" src="${img}"/>
             </div>
         `;
     }
-    const botonesDetalles = document.querySelectorAll(".vehiculosSeccion");
-    botonesDetalles.forEach(vehiculoDiv => {
-        vehiculoDiv.addEventListener('click', function() {
+    const vehiculosCards = document.querySelectorAll(".vehiculosSeccion");
+    vehiculosCards.forEach(card => {
+        card.addEventListener('click', function(event) {
+            if (event.target.classList.contains('pencil') || event.target.classList.contains('trash')) {
+                return;
+            }
             const vehiculoId = this.getAttribute('idCarro');
-            mostrarVehiculoIndividual(vehiculoId, data.vehiculos, data.pilotos);
         });
     });
 }
 
-async function cargarPilotosVehiculo(vehiculo, todosLosPilotos) {
-    const pilotosContainer = document.getElementById("pilotosVehiculo");
-    
-    try {
-        if (vehiculo.pilotos && vehiculo.pilotos.length > 0) {
-            pilotosContainer.innerHTML = '';
+async function  eliminarVehiculo(id) {
+    if (confirm("¿Estás seguro de que deseas eliminar este vehiculo?")) {
+        try {
+            const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+            const data = response.data;
             
-            for (const pilotoId of vehiculo.pilotos) {
-                const piloto = todosLosPilotos.find(p => p.id === pilotoId);
-                
-                if (piloto) {
-                    pilotosContainer.innerHTML += `
-                         <p class="piloto-nombre">${piloto.nombre}</p>
-                    `;
-                } else {
-                    console.log(`Piloto con ID ${pilotoId} no encontrado`);
-                }
+            const vehiculosActualizados = data.vehiculos.filter(vehiculo => vehiculo.id !== id);
+            
+            await axios.put(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`, {
+                ...data,
+                vehiculos: vehiculosActualizados
+            });
+            
+            const elemento = document.querySelector(`[idCarro="${id}"]`);
+            if (elemento) {
+                elemento.remove();
             }
             
-            if (pilotosContainer.innerHTML === '') {
-                pilotosContainer.innerHTML = "<p>No se encontraron pilotos para este vehículo.</p>";
-            }
-        } else {
-            pilotosContainer.innerHTML = "<p>No hay información disponible sobre los pilotos.</p>";
+        } catch (error) {
+            console.log("Error al eliminar vehiculo:", error);
         }
-    } catch (error) {
-        console.error("Error al cargar los pilotos:", error);
-        pilotosContainer.innerHTML = "<p>Error al cargar la información de los pilotos.</p>";
     }
 }
 
-async function mostrarVehiculoIndividual(id, vehiculos, pilotos) {
+
+
+async function mostrarVehiculoIndividual(id, vehiculos, vehiculos) {
     const vehiculoIndividual = document.getElementById("vehiculosindividual");
     const vehiculoSeleccionado = vehiculos.find(vehiculo => vehiculo.id === id);
     
@@ -75,8 +72,8 @@ async function mostrarVehiculoIndividual(id, vehiculos, pilotos) {
                 <p class="vmax">Velocidad Maxima: ${vehiculoSeleccionado.velocidad_maxima_kmh}K/h</p>
                 <p class="aceleracion">Aceleración de 0-100: ${vehiculoSeleccionado.aceleracion_0_100}</p>
                 
-                <p class="pilotos-titulo">Pilotos: </p>
-                <div id="pilotosVehiculo" class="pilotos-container"></div>
+                <p class="vehiculos-titulo">vehiculos: </p>
+                <div id="vehiculosVehiculo" class="vehiculos-container"></div>
                 
                 <p class="Rendimiento">Rendimiento</p>
                 <div class="Normal">
@@ -128,10 +125,17 @@ async function mostrarVehiculoIndividual(id, vehiculos, pilotos) {
             vehiculoIndividual.style.display = "none";
         });
         
-        await cargarPilotosVehiculo(vehiculoSeleccionado, pilotos);
+        await cargarvehiculosVehiculo(vehiculoSeleccionado, vehiculos);
     } else {
         console.error("Vehículo no encontrado con ID:", id);
     }
 }
 
-mostrarVehiculos();
+document.addEventListener('DOMContentLoaded', function() {
+    let pilotoIndividual = document.getElementById("vehiculosindividual");
+    if (pilotoIndividual) {
+        pilotoIndividual.style.display = "none";
+    }
+        
+    mostrarVehiculos();
+});

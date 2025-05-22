@@ -14,18 +14,46 @@ async function mostrarescuderia() {
             <div class="escuderiasSeccion" idescuderia="${escuderia.id}">
                 <img class="images" src="${img}"/>
                 <h1 class="escuderiaNames">${nombre}</h1>
-                <img class="pencil" src="../../img/pencil.png"/>
-                <img class="trash" src="../../img/trash.png"/>
+                <img class="pencil" src="../../img/pencil.png" onclick="editarEscuderias'${escuderia.id}')"/>
+                <img class="trash" src="../../img/trash.png" onclick="eliminarEscuderias'${escuderia.id}')"/>
             </div>
         `;
     }
-    const botonesDetalles = document.querySelectorAll(".escuderiasSeccion");
-    botonesDetalles.forEach(escuderiaDiv => {
-        escuderiaDiv.addEventListener('click', function() {
+
+    const escuderiasCards = document.querySelectorAll(".escuderiasSeccion");
+    escuderiasCards.forEach(card => {
+        card.addEventListener('click', function(event) {
+            if (event.target.classList.contains('pencil') || event.target.classList.contains('trash')) {
+                return;
+            }
+            
             const escuderiaId = this.getAttribute('idescuderia');
-            mostrarescuderiaIndividual(escuderiaId, data.escuderias);
         });
     });
+}
+
+async function  eliminarEscuderias(id) {
+    if (confirm("¿Estás seguro de que deseas eliminar esta escuderia?")) {
+        try {
+            const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
+            const data = response.data;
+            
+            const escuderiasActualizadas = data.escuderias.filter(escuderia => escuderia.id !== id);
+            
+            await axios.put(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`, {
+                ...data,
+                escuderias: escuderiasActualizadas
+            });
+            
+            const elemento = document.querySelector(`[idescuderia="${id}"]`);
+            if (elemento) {
+                elemento.remove();
+            }
+            
+        } catch (error) {
+            console.log("Error al eliminar escuderia:", error);
+        }
+    }
 }
 
 
@@ -42,8 +70,8 @@ async function mostrarescuderiaIndividual(escuderiaId, escuderias) {
                 <p class="pais">País: ${escuderia.pais}</p>
                 <p class="motor">Motor: ${escuderia.motor}</p>
                 
-                <h3 class="pilotoss">Pilotos</h3>
-                <div id="pilotosEscuderia" class="pilotos-container"></div>
+                <h3 class="escuderiass">escuderias</h3>
+                <div id="escuderiasEscuderia" class="escuderias-container"></div>
                 
                 <button id="cerrarDetalle" class="btn-cerrar">Volver</button>
             </div>
@@ -55,26 +83,26 @@ async function mostrarescuderiaIndividual(escuderiaId, escuderias) {
             escuderiaIndividual.style.display = "none";
         });
         
-        await cargarPilotosEscuderia(escuderia);
+        await cargarescuderiasEscuderia(escuderia);
     } 
 }
 
-async function cargarPilotosEscuderia(escuderia) {
-    const pilotosContainer = document.getElementById("pilotosEscuderia");
+async function cargarescuderiasEscuderia(escuderia) {
+    const escuderiasContainer = document.getElementById("escuderiasEscuderia");
     
     try {
         const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
-        const todosLosPilotos = response.data.pilotos || [];
+        const todosLosescuderias = response.data.escuderias || [];
         
-        const pilotosEscuderia = todosLosPilotos.filter(piloto => 
-            escuderia.pilotos && escuderia.pilotos.includes(piloto.id)
+        const escuderiasEscuderia = todosLosescuderias.filter(piloto => 
+            escuderia.escuderias && escuderia.escuderias.includes(piloto.id)
         );
         
-        if (pilotosEscuderia.length > 0) {
-            pilotosContainer.innerHTML = '';
+        if (escuderiasEscuderia.length > 0) {
+            escuderiasContainer.innerHTML = '';
             
-            pilotosEscuderia.forEach(piloto => {
-                pilotosContainer.innerHTML += `
+            escuderiasEscuderia.forEach(piloto => {
+                escuderiasContainer.innerHTML += `
                     <div class="piloto-card">
                         <img class="piloto-foto" src="${piloto.foto}" alt="${piloto.nombre}"/>
                         <h3>${piloto.nombre}</h3>
@@ -84,11 +112,11 @@ async function cargarPilotosEscuderia(escuderia) {
                 `;
             });
         } else {
-            pilotosContainer.innerHTML = "<p>No hay información disponible sobre los pilotos.</p>";
+            escuderiasContainer.innerHTML = "<p>No hay información disponible sobre los escuderias.</p>";
         }
     } catch (error) {
-        console.error("Error al cargar los pilotos:", error);
-        pilotosContainer.innerHTML = "<p>Error al cargar la información de los pilotos.</p>";
+        console.error("Error al cargar los escuderias:", error);
+        escuderiasContainer.innerHTML = "<p>Error al cargar la información de los escuderias.</p>";
     }
 }
 
