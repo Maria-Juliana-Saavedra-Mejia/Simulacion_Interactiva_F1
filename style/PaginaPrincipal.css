@@ -423,32 +423,32 @@ header{
                   height: auto;
                   aspect-ratio: 4/3;
                   left: 50vw;
-                  top: 55vw;
+                  top: 30vw;
             }
             
             .titulo {
-                  top: 60vw;
-                  left: 10vw;
+                  top: 30vw;
+                  left: 3vw;
                   font-size: 5vw;
                   width: 40vw;
             }
             
             .circuito {
-                  top: 80vw;
-                  left: 22vw;
+                  top: 55vw;
+                  left: 19vw;
                   font-size: 4vw;
                   width: 80vw;
             }
             
             .info {
-                  top: 88vw;
+                  top: 63vw;
                   left: 8vw;
                   font-size: 4vw;
                   width: 80vw;
             }
             
             .boton {
-                  top: 115vw;
+                  top: 90vw;
                   left: 35vw;
                   font-size: 4vw;
                   width: 30vw;
@@ -457,13 +457,13 @@ header{
             }
             
             .ultimos {
-                  top: 130vw;
+                  top: 100vw;
                   left: 10vw;
                   font-size: 5vw;
             }
             
             .granPremioMonaco {
-                  top: 140vw;
+                  top: 115vw;
                   left: 5vw;
                   width: 90vw;
                   height: 60vw;
@@ -561,14 +561,14 @@ header{
             
             
             .news {
-                  top: 235vw;
+                  top: 180vw;
                   left: 10vw;
                   font-size: 5vw;
             }
             
             
             .n1 {
-                  top: 245vw;
+                  top: 200vw;
                   left: 5vw;
                   width: 90vw;
                   height: 70vw;
@@ -595,7 +595,7 @@ header{
             }
             
             .n2 {
-                  top: 320vw;
+                  top: 280vw;
                   left: 5vw;
                   width: 90vw;
                   height: 70vw;
@@ -622,7 +622,7 @@ header{
             }
             
             .n3 {
-                  top: 400vw;
+                  top: 360vw;
                   left: 5vw;
                   width: 90vw;
                   height: 70vw;
@@ -650,12 +650,12 @@ header{
             
             
             .final {
-                  top: 470vw;
+                  top: 435vw;
                   height: 15vw;
             }
             
             .pieDePagina {
                   font-size: 3.5vw;
-                  padding-top: 5vw;
+                  padding-top: -10vw;
             }
 }
