@@ -1,6 +1,7 @@
 async function mostrarpilotos() {
     console.log("holaaaaaa")
     let piloto = document.getElementById("pilotosApi")
+    piloto.innerHTML = '';
     const response = await axios.get(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`);
     console.log(response.data.pilotos)
     const data = response.data;

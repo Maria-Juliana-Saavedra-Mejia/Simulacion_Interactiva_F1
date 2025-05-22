@@ -116,18 +116,6 @@
     font-size: 2vw;
 }
 
-#pilotosEscuderia{
-    position: absolute;
-    top: 30vw;
-    left: 10vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 60vw;
-    color: black;
-    font-family: 'ligth';
-    gap: 3vw;
-    
-}
 .piloto-foto{
     width: 20vw;
 }
@@ -139,6 +127,7 @@
     border-bottom-left-radius: 2vw;
     font-size: 1.5vw;
 }
+
 button{
     position: absolute;
     top: 3vw;
@@ -167,4 +156,161 @@ button{
     top: -20vw;
     left: 14vw;
     width: 3vw;
+}
+
+
+#escuderiasIndividual{
+    position: absolute;
+    background-color: black;
+    top: 13vw;
+    left: 25vw;
+    width: 50vw;
+    height: 68vw;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    align-items: center;
+    text-align: left;
+}
+.modal-content {
+    position: relative;
+    background: black;
+    padding: 3vw;
+    border-radius: 2vw;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.5vw;
+    left: 1vw;
+    background: white;
+    border: none;
+    font-size: 2.5vw;
+    color: black;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.modal-content h2 {
+    color: white;
+    font-size: 2.5vw;
+    top: vw;
+    left: 20vw;
+    text-align: center;
+    font-family: 'regular';
+    font-size: 3.5vw;
+
+}
+
+.form-group {
+    margin-bottom: 1.5vw;
+}
+
+.form-group label {
+    width: 40vw;
+    display: block;
+    color: white;
+    font-size: 1.2vw;
+    margin-bottom: 0.5vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.8vw;
+    font-size: 1.1vw;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    font-family: 'regular';
+    font-size: 1.5vw;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background: white;
+    box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.2vw);
+    font-family: 'regular';
+    font-size: 1.5vw;
+}
+
+.form-group textarea {
+    height: 6vw;
+    resize: vertical;
+    min-height: 4vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+}
+
+.record-inputs {
+    display: flex;
+    gap: 1vw;
+}
+
+.record-inputs input {
+    flex: 1;
+}
+
+.button-group {
+    position: absolute;
+    bottom: 2vw;
+    left: -30vw;
+    display: flex;
+    gap: 1vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+}
+
+.btn-cancel,
+.btn-save {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0.8vw;
+    font-size: 1.2vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+}
+
+.btn-cancel {
+    background: rgba(108, 117, 125, 0.9);
+    color: white;
+}
+
+.btn-cancel:hover {
+    background: rgba(108, 117, 125, 1);
+    transform: translateY(-0.2vw);
+}
+
+.btn-save {
+    background: rgba(0, 123, 255, 0.9);
+    color: white;
+    height: 3vw;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-save:hover {
+    background: rgba(0, 123, 255, 1);
+    transform: translateY(-0.2vw);
 }
