@@ -64,6 +64,25 @@ async function editarCircuito(id) {
             return;
         }
         
+        let ganadoresHTML = '';
+        if (circuito.ganadores && circuito.ganadores.length > 0) {
+            circuito.ganadores.forEach((ganador, index) => {
+                ganadoresHTML += `
+                    <div class="ganador-item" data-index="${index}">
+                        <div class="form-group">
+                            <label>Temporada:</label>
+                            <input type="number" class="ganador-temporada" value="${ganador.temporada}">
+                        </div>
+                        <div class="form-group">
+                            <label>ID Piloto:</label>
+                            <input type="text" class="ganador-piloto" value="${ganador.piloto}">
+                        </div>
+                    </div>
+                    <br></br>
+                `;
+            });
+        }
+        
         const circuitoIndividual = document.getElementById('circuitoIndividual');
         circuitoIndividual.style.display = 'block';
         
@@ -102,6 +121,11 @@ async function editarCircuito(id) {
                     <input type="url" id="editImagen" value="${circuito.imagen}">
                 </div>
                 
+                <h3>Ganadores por Temporada</h3>
+                <div id="ganadoresContainer">
+                    ${ganadoresHTML}
+                </div>
+                
                 <div class="form-group">
                     <label>Record de vuelta:</label>
                     <div class="record-inputs">
@@ -128,6 +152,7 @@ async function editarCircuito(id) {
         console.error("Error al cargar datos del circuito:", error);
         alert("Error al cargar los datos del circuito");
     }
+}
 
 async function guardarCircuito(id) {
     try {
@@ -155,6 +180,14 @@ async function guardarCircuito(id) {
             return;
         }
         
+        const ganadoresItems = document.querySelectorAll('.ganador-item');
+        const ganadores = [];
+        ganadoresItems.forEach(item => {
+            const temporada = item.querySelector('.ganador-temporada').value;
+            const piloto = item.querySelector('.ganador-piloto').value;
+            ganadores.push({ temporada, piloto });
+        });
+        
         data.circuitos[circuitoIndex] = {
             ...data.circuitos[circuitoIndex],
             nombre: nombre,
@@ -167,21 +200,25 @@ async function guardarCircuito(id) {
                 tiempo: recordTiempo,
                 piloto: recordPiloto,
                 año: recordAno
-            }
+            },
+            ganadores: ganadores.length > 0 ? ganadores : data.circuitos[circuitoIndex].ganadores
         };
         
         await axios.put(`https://681b4aa417018fe5057af2c9.mockapi.io/F1/1/`, data);
         
         alert("Circuito actualizado correctamente");
-        cerrarModal();
-        
+        cerrarCircuitoIndividual();
         mostrarCircuitos();
+        setTimeout(() => {
+            window.location.reload();
+        }, 1000);
         
     } catch (error) {
         console.error("Error al guardar circuito:", error);
         alert("Error al guardar los cambios");
     }
-}}
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
     let circuitoIndividual = document.getElementById("circuitoIndividual");
@@ -190,4 +227,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     mostrarCircuitos();
-});
+}); 

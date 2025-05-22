@@ -42,19 +42,23 @@
     top: 8vw;
     left: 20vw;
     width: 60vw;
-    height: 76vw;
+    height: 160vw;
     background-color:  black;
     border-radius: 2vw;
+    font-family: 'regular';
+    font-size: 1.5vw;
+    color: white;
 }
 
 .modal-content {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 60vw;
+    height: 170vw;
     background: black;
     padding: 3vw;
     border-radius: 2vw;
-    overflow-y: auto;
+    font-family: 'regular';
+    font-size: 1.5vw;
 }
 
 .close-btn {
@@ -82,7 +86,7 @@
 .modal-content h2 {
     color: white;
     font-size: 2.5vw;
-    top: vw;
+    top: 10vw;
     left: 20vw;
     text-align: center;
     font-family: 'regular';
