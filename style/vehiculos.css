@@ -1,6 +1,70 @@
 @import url(./fonts.css);
 body,html{
     background-color: black;
+
+    header{
+      z-index: initial
+}
+.logoF1{
+      position: absolute;
+      width: 10vw;
+      left: 4.5vw;
+
+}
+.circuitos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 2.5vw;
+      left: 20vw;
+      top: 0vw;
+      text-decoration: none;
+      color: black;
+}
+.escuderias{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 2.5vw;
+      left: 35vw;
+      top: 0vw;
+      text-decoration: none;
+      color: black;
+}
+.pilotos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 2.5vw;
+      left: 50vw;
+      top: 0vw;
+      text-decoration: none;
+      color: black;
+}
+.vehiculos{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 2.5vw;
+      left: 60vw;
+      top: 0vw;
+      text-decoration: none;
+      color: black;
+}
+.simulacion{
+      position: absolute;
+      font-family: 'regular';
+      font-size: 2.5vw;
+      left: 78vw;
+      top: 0vw;
+      text-decoration: none;
+      color: black;
+}
+.circuitos:hover,
+.escuderias:hover,
+.pilotos:hover,
+.vehiculos:hover,
+.simulacion:hover {
+    color: red;
+}
+
+
 }
 header{
     z-index: initial;
@@ -8,11 +72,8 @@ header{
     width: 92vw;
     height: 6vw;
 }
-.logoF1{
-    position: absolute;
-    width: 10vw;
-    left: 6vw;
-}
+
+
 #vehiculosApi{
     position: absolute;
     top: 10vw;

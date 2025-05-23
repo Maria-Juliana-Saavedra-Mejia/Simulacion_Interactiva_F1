@@ -2,22 +2,22 @@
 .texto{
     position: absolute;
     font-family: 'extra-ligth';
-    top: 5vw;
-    left: 44vw;
-    font-size: 3vw;
+    top: 20vw;
+    left: 40vw;
+    font-size: 5vw;
 }
 .fecha{
     position: absolute;
     font-family: 'fechas';
-    top: 9vw;
-    left: 44.5vw;
+    top: 27vw;
+    left: 44vw;
     font-size:5vw;
     font-weight: 100;
 }
 #escuderiasApi{
     left: 8vw;
     position: absolute;
-    top: 20vw;
+    top: 40vw;
     width: 10vw;
     height:10vw;
     display: grid;

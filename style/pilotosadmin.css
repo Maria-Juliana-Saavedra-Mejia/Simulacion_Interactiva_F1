@@ -2,21 +2,21 @@
 .texto{
     position: absolute;
     font-family: 'extra-ligth';
-    top: 5vw;
-    left: 45vw;
-    font-size: 3vw;
+    top: 18vw;
+    left: 43vw;
+    font-size: 5vw;
 }
 .fecha{
     position: absolute;
     font-family: 'fechas';
-    top: 9vw;
+    top: 23vw;
     left: 43.5vw;
     font-size:5vw;
     font-weight: 100;
 }
 #pilotosApi{
     position: absolute;
-    top: 20vw;
+    top: 35vw;
     left: 8vw;
     width: 2vw;
     height:2vw;
@@ -64,7 +64,7 @@
 
 .image {
     position: absolute;
-    top: -0.5vw;
+    top: 5vw;
     right: 16vw;
     width: 3vw;
     height: auto;
@@ -72,7 +72,7 @@
 
 .images {
     position: absolute;
-    top: 3vw;
+    top: 5vw;
     width: 80%;
     left: 1.5vw;
     object-fit: cover;

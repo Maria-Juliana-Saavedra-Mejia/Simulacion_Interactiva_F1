@@ -3,21 +3,21 @@
 .texto{
     position: absolute;
     font-family: 'extra-ligth';
-    top: 5vw;
-    left: 45vw;
-    font-size: 3vw;
+    top: 22vw;
+    left: 43vw;
+    font-size: 5vw;
 }
 .fecha{
     position: absolute;
     font-family: 'fechas';
-    top: 9vw;
-    left: 44.5vw;
-    font-size:5vw;
+    top: 25vw;
+    left: 43vw;
+    font-size:7vw;
     font-weight: 100;
 }
 #circuitosApi{
     position: absolute;
-    top: 20vw;
+    top: 40vw;
     width: 2vw;
     height:2vw;
     display: grid;
@@ -28,6 +28,7 @@
     margin: 3vw;
 }
 .images{
+    top: 15vw;
     width: 25vw;
     height:15vw;
 }
@@ -39,10 +40,10 @@
 
 #circuitoIndividual {
     position: absolute;
-    top: 8vw;
+    top: 10vw;
     left: 20vw;
-    width: 60vw;
-    height: 160vw;
+    width: 100vw;
+    height: 190vw;
     background-color:  zblack;
     border-radius: 2vw;
     font-family: 'regular';

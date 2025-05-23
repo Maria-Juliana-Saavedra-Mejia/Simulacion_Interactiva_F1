@@ -1,54 +1,131 @@
 @import url(./fonts.css);
-body,html{
+
+body,
+html {
     background-color: black;
+
+    header {
+        z-index: initial
+    }
+
+    .logoF1 {
+        position: absolute;
+        width: 10vw;
+        left: 4.5vw;
+
+    }
+
+    .circuitos {
+        position: absolute;
+        font-family: 'regular';
+        font-size: 2vw;
+        left: 20vw;
+        top: 0vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .escuderias {
+        position: absolute;
+        font-family: 'regular';
+        font-size: 2vw;
+        left: 35vw;
+        top: 0.5vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .pilotos {
+        position: absolute;
+        font-family: 'regular';
+        font-size: 2vw;
+        left: 50vw;
+        top: 0.5vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .vehiculos {
+        position: absolute;
+        font-family: 'regular';
+        font-size: 2vw;
+        left: 60vw;
+        top: 0.5vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .simulacion {
+        position: absolute;
+        font-family: 'regular';
+        font-size: 2vw;
+        left: 80vw;
+        top: 0.5vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    .circuitos:hover,
+    .escuderias:hover,
+    .pilotos:hover,
+    .vehiculos:hover,
+    .simulacion:hover {
+        color: red;
+    }
 }
-header{
+
+header {
     background-color: white;
     width: 100%;
     height: 6vw;
 }
-#vehiculosApi{
+
+#vehiculosApi {
     position: absolute;
     top: 10vw;
     width: 2vw;
-    height:2vw;
+    height: 2vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     text-align: center;
-    gap: 8vw;
+    gap2vw;
     margin: 3vw;
 }
-.vehiculosSeccion{
+
+.vehiculosSeccion {
     width: 25vw;
     height: 20vw;
 }
-.images{
+
+.images {
     width: 25vw;
 }
-.modelo{
+
+.modelo {
     color: white;
     font-family: 'regular';
     font-size: 2vw;
 }
 
 
-.pencil{
+.pencil {
     top: 0vw;
     width: 3vw;
 }
 
-.trash{
+.trash {
     top: 0vw;
     width: 3vw;
 }
-.imagess{
+
+.imagess {
     background-color: white;
-    width: 8vw;
+    width2vw;
 }
 
 
-#vehiculosindividual{
+#vehiculosindividual {
     position: absolute;
     background-color: white;
     top: 13vw;
@@ -64,6 +141,7 @@ header{
     font-family: 'regular';
     font-size: 1.5vw;
 }
+
 .modal-content {
     color: black;
     position: relative;
@@ -91,6 +169,7 @@ header{
     justify-content: center;
     transition: all 0.3s ease;
 }
+
 .close-btn:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
@@ -126,7 +205,7 @@ header{
     width: 100%;
     padding: 1vw;
     border: none;
-    border-radius: 0.8vw;
+    border-radius: 2vw;
     font-size: 1.1vw;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
@@ -178,7 +257,7 @@ header{
 .btn-save {
     padding: 1vw 2vw;
     border: none;
-    border-radius: 0.8vw;
+    border-radius: 2vw;
     font-size: 1.2vw;
     font-family: 'regular';
     font-size: 1.5vw;
@@ -225,56 +304,58 @@ header{
         width: 70vw;
         left: 37.5vw;
         top: 4vw;
-        }
-        
-        
-        .circuitos {
+    }
+
+
+    .circuitos {
         font-size: 4vw;
         left: 5vw;
         top: 12vw;
-        }
-        
-        .escuderias {
-        font-size: 2.8vw;
+    }
+
+    .escuderias {
+        font-size: 2vw;
         left: 25vw;
         top: 12vw;
-        }
-        
-        .pilotos {
-        font-size: 2.8vw;
+    }
+
+    .pilotos {
+        font-size: 2vw;
         left: 45vw;
         top: 12vw;
-        }
-        
-        .vehiculos {
-        font-size: 2.8vw;
+    }
+
+    .vehiculos {
+        font-size: 2vw;
         left: 65vw;
         top: 12vw;
-        }
-        
-        .simulacion {
-        font-size: 2.8vw;
+    }
+
+    .simulacion {
+        font-size: 2vw;
         left: 85vw;
         top: 12vw;
-        }}
+    }
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
     /* Header remains the same as original */
-    
+
     #vehiculosApi {
         grid-template-columns: repeat(2, 1fr);
         gap: 6vw;
     }
-    
+
     .vehiculosSeccion {
         width: 40vw;
         height: 30vw;
     }
-    
+
     .images {
         width: 40vw;
     }
-    
+
     .modelo {
         font-size: 3vw;
     }
@@ -282,107 +363,111 @@ header{
 
 @media (max-width: 768px) {
     /* Header remains the same as original */
-    
+
     #vehiculosApi {
         grid-template-columns: 1fr;
         gap: 10vw;
         margin-top: 15vw;
     }
-    
+
     .vehiculosSeccion {
         width: 80vw;
         height: 60vw;
         margin: 0 auto;
     }
-    
+
     .images {
         width: 80vw;
     }
-    
+
     .modelo {
         font-size: 5vw;
     }
-    
+
     .vehiculo-detalle {
         top: 15vw;
         left: 5vw;
         width: 90vw;
         height: 200vw;
     }
-    
+
     .imagesVentana {
         width: 70vw;
         left: 10vw;
     }
-    
-    .modelos, .equipo {
+
+    .modelos,
+    .equipo {
         font-size: 4vw;
         top: 50vw;
     }
-    
+
     .modelos {
         left: 5vw;
     }
-    
+
     .equipo {
         left: 50vw;
     }
-    
-    .motor, .vmax {
+
+    .motor,
+    .vmax {
         font-size: 4vw;
         top: 60vw;
     }
-    
+
     .motor {
         left: 5vw;
     }
-    
+
     .vmax {
         left: 50vw;
     }
-    
+
     .aceleracion {
         font-size: 4vw;
         top: 70vw;
         left: 5vw;
     }
-    
+
     .Rendimiento {
         font-size: 6vw;
         top: 85vw;
         left: 35vw;
     }
-    
+
     .Normal {
         top: 100vw;
         left: 5vw;
     }
-    
+
     .Agresiva {
         top: 130vw;
         left: 5vw;
     }
-    
+
     .Ahorro {
         top: 160vw;
         left: 5vw;
         right: auto;
     }
-    
-    .Conduccion, .Consumo, .Desgaste {
+
+    .Conduccion,
+    .Consumo,
+    .Desgaste {
         font-size: 4vw;
     }
-    
+
     p {
         font-size: 3vw;
     }
-    
+
     button {
         top: 20vw;
         left: 40vw;
         font-size: 4vw;
         width: 20vw;
-        height: 8vw;
+        height2vw;
         border-radius: 4vw;
     }
 }
@@ -390,7 +475,7 @@ header{
 /* Specific optimization for iPhone 14 Pro Max (430px width) */
 @media (max-width: 430px) {
     /* Header remains the same as original */
-    
+
     #vehiculosApi {
         grid-template-columns: 1fr;
         gap: 12vw;
@@ -398,21 +483,21 @@ header{
         width: 90vw;
         margin-left: 5vw;
     }
-    
+
     .vehiculosSeccion {
         width: 90vw;
         height: 70vw;
     }
-    
+
     .images {
         width: 90vw;
     }
-    
+
     .modelo {
         font-size: 6vw;
         margin-top: 2vw;
     }
-    
+
     .vehiculo-detalle {
         top: 15vw;
         left: 5vw;
@@ -421,84 +506,88 @@ header{
         border-radius: 5vw;
         overflow-y: scroll;
     }
-    
+
     .imagesVentana {
         width: 80vw;
         left: 5vw;
         top: 15vw;
     }
-    
-    .modelos, .equipo {
+
+    .modelos,
+    .equipo {
         font-size: 5vw;
         position: absolute;
     }
-    
+
     .modelos {
         top: 60vw;
         left: 10vw;
     }
-    
+
     .equipo {
         top: 60vw;
         left: 50vw;
     }
-    
-    .motor, .vmax {
+
+    .motor,
+    .vmax {
         font-size: 5vw;
         position: absolute;
     }
-    
+
     .motor {
         top: 75vw;
         left: 10vw;
     }
-    
+
     .vmax {
         top: 75vw;
         left: 50vw;
     }
-    
+
     .aceleracion {
         font-size: 5vw;
         top: 90vw;
         left: 10vw;
         position: absolute;
     }
-    
+
     .Rendimiento {
         font-size: 7vw;
         top: 110vw;
         left: 30vw;
         position: absolute;
     }
-    
+
     .Normal {
         top: 130vw;
         left: 10vw;
         position: absolute;
     }
-    
+
     .Agresiva {
         top: 170vw;
         left: 10vw;
         position: absolute;
     }
-    
+
     .Ahorro {
         top: 210vw;
         left: 10vw;
         right: auto;
         position: absolute;
     }
-    
-    .Conduccion, .Consumo, .Desgaste {
+
+    .Conduccion,
+    .Consumo,
+    .Desgaste {
         font-size: 5vw;
     }
-    
+
     p {
         font-size: 4vw;
     }
-    
+
     button {
         top: 5vw;
         left: 5vw;

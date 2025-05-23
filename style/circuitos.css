@@ -10,14 +10,14 @@
 .fecha{
     position: absolute;
     font-family: 'fechas';
-    top: 20vw;
+    top: 22vw;
     left: 40vw;
-    font-size:8vw;
+    font-size:7vw;
     font-weight: 100;
 }
 #circuitosApi{
     position: absolute;
-    top: 35vw;
+    top: 40vw;
     width: 2vw;
     height:2vw;
     display: grid;
@@ -28,8 +28,9 @@
     margin: 3vw;
 }
 .images{
+    top: 25vw;
     width: 25vw;
-    height:15vw;
+    height:25vw;
 }
 .circuitNames{
     color: #B80000;
@@ -69,7 +70,7 @@ button{
 .circuito-imagen{
     position: absolute;
     width: 40vw;
-    top: 15vw;
+    top: 45vw;
     left: 5vw;
 }
 .nombre{
@@ -198,7 +199,7 @@ button{
     #circuitosApi {
         position: relative;
         top: 45vw;
-        width: 90%;
+        width: 90vw;
         height: auto;
         grid-template-columns: 1fr;
         gap: 15vw;
