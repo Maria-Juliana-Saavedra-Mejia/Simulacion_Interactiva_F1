@@ -43,7 +43,7 @@
     left: 20vw;
     width: 60vw;
     height: 160vw;
-    background-color:  black;
+    background-color:  zblack;
     border-radius: 2vw;
     font-family: 'regular';
     font-size: 1.5vw;
@@ -53,7 +53,7 @@
 .modal-content {
     position: relative;
     width: 60vw;
-    height: 170vw;
+    height: 240vw;
     background: black;
     padding: 3vw;
     border-radius: 2vw;
@@ -196,8 +196,8 @@
 
 @media (max-width: 768px) {
     #circuitoIndividual {
-        width: 90vw;
-        height: 85vh;
+        width: 100vw;
+        height: 100vh;
     }
     
     .modal-content {
@@ -220,7 +220,7 @@
     
     .close-btn {
         font-size: 4vw;
-        width: 6vw;
+        width: 1vw;
         height: 6vw;
     }
     

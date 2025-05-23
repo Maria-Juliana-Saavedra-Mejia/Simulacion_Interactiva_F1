@@ -174,6 +174,7 @@ header{
 }
 
 .btn-cancel,
+
 .btn-save {
     padding: 1vw 2vw;
     border: none;
@@ -188,8 +189,8 @@ header{
 
 .btn-cancel {
     position: absolute;
-    left: 60vw;
-    top: -7vw;
+    left: 40vw;
+    top: -3vw;
     background: rgba(108, 117, 125, 0.9);
     color: white;
     height: 4.5vw;
@@ -204,8 +205,8 @@ header{
 
 .btn-save {
     position: absolute;
-    left: 73vw;
-    top: -7vw;
+    left: 60vw;
+    top: -3vw;
     background: rgba(0, 123, 255, 0.9);
     color: white;
     height: 4.5vw;
@@ -216,4 +217,294 @@ header{
 .btn-save:hover {
     background: rgba(0, 123, 255, 1);
     transform: translateY(-0.2vw);
+}
+
+@media screen and (max-width: 430px) {
+
+    .logoF1 {
+        width: 70vw;
+        left: 37.5vw;
+        top: 4vw;
+        }
+        
+        
+        .circuitos {
+        font-size: 4vw;
+        left: 5vw;
+        top: 12vw;
+        }
+        
+        .escuderias {
+        font-size: 2.8vw;
+        left: 25vw;
+        top: 12vw;
+        }
+        
+        .pilotos {
+        font-size: 2.8vw;
+        left: 45vw;
+        top: 12vw;
+        }
+        
+        .vehiculos {
+        font-size: 2.8vw;
+        left: 65vw;
+        top: 12vw;
+        }
+        
+        .simulacion {
+        font-size: 2.8vw;
+        left: 85vw;
+        top: 12vw;
+        }}
+/* Media Queries */
+@media (max-width: 1200px) {
+    /* Header remains the same as original */
+    
+    #vehiculosApi {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6vw;
+    }
+    
+    .vehiculosSeccion {
+        width: 40vw;
+        height: 30vw;
+    }
+    
+    .images {
+        width: 40vw;
+    }
+    
+    .modelo {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header remains the same as original */
+    
+    #vehiculosApi {
+        grid-template-columns: 1fr;
+        gap: 10vw;
+        margin-top: 15vw;
+    }
+    
+    .vehiculosSeccion {
+        width: 80vw;
+        height: 60vw;
+        margin: 0 auto;
+    }
+    
+    .images {
+        width: 80vw;
+    }
+    
+    .modelo {
+        font-size: 5vw;
+    }
+    
+    .vehiculo-detalle {
+        top: 15vw;
+        left: 5vw;
+        width: 90vw;
+        height: 200vw;
+    }
+    
+    .imagesVentana {
+        width: 70vw;
+        left: 10vw;
+    }
+    
+    .modelos, .equipo {
+        font-size: 4vw;
+        top: 50vw;
+    }
+    
+    .modelos {
+        left: 5vw;
+    }
+    
+    .equipo {
+        left: 50vw;
+    }
+    
+    .motor, .vmax {
+        font-size: 4vw;
+        top: 60vw;
+    }
+    
+    .motor {
+        left: 5vw;
+    }
+    
+    .vmax {
+        left: 50vw;
+    }
+    
+    .aceleracion {
+        font-size: 4vw;
+        top: 70vw;
+        left: 5vw;
+    }
+    
+    .Rendimiento {
+        font-size: 6vw;
+        top: 85vw;
+        left: 35vw;
+    }
+    
+    .Normal {
+        top: 100vw;
+        left: 5vw;
+    }
+    
+    .Agresiva {
+        top: 130vw;
+        left: 5vw;
+    }
+    
+    .Ahorro {
+        top: 160vw;
+        left: 5vw;
+        right: auto;
+    }
+    
+    .Conduccion, .Consumo, .Desgaste {
+        font-size: 4vw;
+    }
+    
+    p {
+        font-size: 3vw;
+    }
+    
+    button {
+        top: 20vw;
+        left: 40vw;
+        font-size: 4vw;
+        width: 20vw;
+        height: 8vw;
+        border-radius: 4vw;
+    }
+}
+
+/* Specific optimization for iPhone 14 Pro Max (430px width) */
+@media (max-width: 430px) {
+    /* Header remains the same as original */
+    
+    #vehiculosApi {
+        grid-template-columns: 1fr;
+        gap: 12vw;
+        margin-top: 18vw;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    
+    .vehiculosSeccion {
+        width: 90vw;
+        height: 70vw;
+    }
+    
+    .images {
+        width: 90vw;
+    }
+    
+    .modelo {
+        font-size: 6vw;
+        margin-top: 2vw;
+    }
+    
+    .vehiculo-detalle {
+        top: 15vw;
+        left: 5vw;
+        width: 90vw;
+        height: 250vw;
+        border-radius: 5vw;
+        overflow-y: scroll;
+    }
+    
+    .imagesVentana {
+        width: 80vw;
+        left: 5vw;
+        top: 15vw;
+    }
+    
+    .modelos, .equipo {
+        font-size: 5vw;
+        position: absolute;
+    }
+    
+    .modelos {
+        top: 60vw;
+        left: 10vw;
+    }
+    
+    .equipo {
+        top: 60vw;
+        left: 50vw;
+    }
+    
+    .motor, .vmax {
+        font-size: 5vw;
+        position: absolute;
+    }
+    
+    .motor {
+        top: 75vw;
+        left: 10vw;
+    }
+    
+    .vmax {
+        top: 75vw;
+        left: 50vw;
+    }
+    
+    .aceleracion {
+        font-size: 5vw;
+        top: 90vw;
+        left: 10vw;
+        position: absolute;
+    }
+    
+    .Rendimiento {
+        font-size: 7vw;
+        top: 110vw;
+        left: 30vw;
+        position: absolute;
+    }
+    
+    .Normal {
+        top: 130vw;
+        left: 10vw;
+        position: absolute;
+    }
+    
+    .Agresiva {
+        top: 170vw;
+        left: 10vw;
+        position: absolute;
+    }
+    
+    .Ahorro {
+        top: 210vw;
+        left: 10vw;
+        right: auto;
+        position: absolute;
+    }
+    
+    .Conduccion, .Consumo, .Desgaste {
+        font-size: 5vw;
+    }
+    
+    p {
+        font-size: 4vw;
+    }
+    
+    button {
+        top: 5vw;
+        left: 5vw;
+        font-size: 5vw;
+        width: 25vw;
+        height: 10vw;
+        border-radius: 5vw;
+    }
 }

@@ -1,6 +1,7 @@
 @import url(./fonts.css);
 body, html{
       background-color: #FFFFFF;
+      
 }
 header{
       z-index: initial
@@ -9,6 +10,7 @@ header{
       position: absolute;
       width: 10vw;
       left: 6vw;
+
 }
 .circuitos{
       position: absolute;
@@ -32,7 +34,7 @@ header{
       position: absolute;
       font-family: 'regular';
       font-size: 1.8vw;
-      left: 52vw;
+      left: 50vw;
       top: 0.5vw;
       text-decoration: none;
       color: black;
@@ -372,290 +374,293 @@ header{
       color: white;
       font-family: 'regular';
       font-size: 1.55vw;
+
 }
+
+
 @media screen and (max-width: 430px) {
-      header {
-            height: 20vw;
-            position: relative;
-            }
-            
-            
-            .logoF1 {
-            width: 25vw;
-            left: 37.5vw;
-            top: 2vw;
-            }
-            
-            
-            .circuitos {
-            font-size: 2.8vw;
-            left: 5vw;
-            top: 12vw;
-            }
-            
-            .escuderias {
-            font-size: 2.8vw;
-            left: 25vw;
-            top: 12vw;
-            }
-            
-            .pilotos {
-            font-size: 2.8vw;
-            left: 45vw;
-            top: 12vw;
-            }
-            
-            .vehiculos {
-            font-size: 2.8vw;
-            left: 65vw;
-            top: 12vw;
-            }
-            
-            .simulacion {
-            font-size: 2.8vw;
-            left: 85vw;
-            top: 12vw;
-            }
-            
-            
-            .españa {
-                  width: 40vw;
-                  height: auto;
-                  aspect-ratio: 4/3;
-                  left: 50vw;
-                  top: 30vw;
-            }
-            
-            .titulo {
-                  top: 30vw;
-                  left: 3vw;
-                  font-size: 5vw;
-                  width: 40vw;
-            }
-            
-            .circuito {
-                  top: 55vw;
-                  left: 19vw;
-                  font-size: 4vw;
-                  width: 80vw;
-            }
-            
-            .info {
-                  top: 63vw;
-                  left: 8vw;
-                  font-size: 4vw;
-                  width: 80vw;
-            }
-            
-            .boton {
-                  top: 90vw;
-                  left: 35vw;
-                  font-size: 4vw;
-                  width: 30vw;
-                  padding: 2vw 0;
-                  text-align: center;
-            }
-            
-            .ultimos {
-                  top: 100vw;
-                  left: 10vw;
-                  font-size: 5vw;
-            }
-            
-            .granPremioMonaco {
-                  top: 115vw;
-                  left: 5vw;
-                  width: 90vw;
-                  height: 60vw;
-                  border-radius: 3vw;
-            }
-            
-            .tituloGran {
-                  font-size: 4.5vw;
-                  top: 2vw;
-            }
-            
-            .location {
-                  font-size: 3.5vw;
-                  top: 8vw;
-            }
-            
-            .carro {
-                  width: 20vw;
-                  top: 3vw;
-                  left: 68vw;
-            }
-            
-            
-            .primero {
-                  font-size: 3.8vw;
-                  top: 15vw;
-                  left: 8vw;
-            }
-            
-            .segundo {
-                  font-size: 3.5vw;
-                  top: 29vw;
-                  left: 8vw;
-            }
-            
-            .tercero {
-                  font-size: 3.5vw;
-                  top: 43vw;
-                  left: 8vw;
-            }
-            
-            .max {
-                  font-size: 3.5vw;
-                  top: 19vw;
-                  left: 8vw;
-            }
-            
-            .red {
-                  font-size: 3vw;
-                  top: 23vw;
-                  left: 8vw;
-            }
-            
-            .charles {
-                  font-size: 3.5vw;
-                  top: 33vw;
-                  left: 8vw;
-            }
-            
-            .Ferrari {
-                  font-size: 3vw;
-                  top: 37vw;
-                  left: 8vw;
-            }
-            
-            .lewis {
-                  font-size: 3.5vw;
-                  top: 47vw;
-                  left: 8vw;
-            }
-            
-            .Mercedes {
-                  font-size: 3vw;
-                  top: 52vw;
-                  left: 8vw;
-            }
-            
-            .uno {
-                  top: 20vw;
-                  left: 50vw;
-                  width: 12vw;
-            }
-            
-            .dos {
-                  top: 35vw;
-                  left: 50vw;
-                  width: 12vw;
-            }
-            
-            .tres {
-                  top: 48vw;
-                  left: 50vw;
-                  width: 12vw;
-            }
-            
-            
-            .news {
-                  top: 180vw;
-                  left: 10vw;
-                  font-size: 5vw;
-            }
-            
-            
-            .n1 {
-                  top: 200vw;
-                  left: 5vw;
-                  width: 90vw;
-                  height: 70vw;
-                  border-radius: 3vw;
-            }
-            
-            .IMG1 {
-                  width: 90vw;
-                  height: 40vw;
-                  object-fit: cover;
-            }
-            
-            .fecha1 {
-                  font-size: 3.5vw;
-                  top: 45vw;
-                  left: 5vw;
-            }
-            
-            .text1 {
-                  font-size: 4vw;
-                  top: 50vw;
-                  left: 5vw;
-                  width: 80vw;
-            }
-            
-            .n2 {
-                  top: 280vw;
-                  left: 5vw;
-                  width: 90vw;
-                  height: 70vw;
-                  border-radius: 3vw;
-            }
-            
-            .IMG2 {
-                  width: 90vw;
-                  height: 40vw;
-                  object-fit: cover;
-            }
-            
-            .fecha2 {
-                  font-size: 3.5vw;
-                  top: 45vw;
-                  left: 5vw;
-            }
-            
-            .text2 {
-                  font-size: 4vw;
-                  top: 50vw;
-                  left: 5vw;
-                  width: 80vw;
-            }
-            
-            .n3 {
-                  top: 360vw;
-                  left: 5vw;
-                  width: 90vw;
-                  height: 70vw;
-                  border-radius: 3vw;
-            }
-            
-            .IMG3 {
-                  width: 90vw;
-                  height: 40vw;
-                  object-fit: cover;
-            }
-            
-            .fecha3 {
-                  font-size: 3.5vw;
-                  top: vw;
-                  left: 5vw;
-            }
-            
-            .text3 {
-                  font-size: 4vw;
-                  top: 50vw;
-                  left: 5vw;
-                  width: 80vw;
-            }
-            
-            
-            .final {
-                  top: 435vw;
-                  height: 15vw;
-            }
-            
-            .pieDePagina {
-                  font-size: 3.5vw;
-                  padding-top: -10vw;
-            }
+}
+header {
+height: 20vw;
+position: relative;
+}
+
+
+.logoF1 {
+width: 25vw;
+left: 37.5vw;
+top: 2vw;
+}
+
+
+.circuitos {
+font-size: 2.8vw;
+left: 5vw;
+top: 12vw;
+}
+
+.escuderias {
+font-size: 2.8vw;
+left: 25vw;
+top: 12vw;
+}
+
+.pilotos {
+font-size: 2.8vw;
+left: 45vw;
+top: 12vw;
+}
+
+.vehiculos {
+font-size: 2.8vw;
+left: 65vw;
+top: 12vw;
+}
+
+.simulacion {
+font-size: 2.8vw;
+left: 85vw;
+top: 12vw;
+}
+
+
+.españa {
+      width: 40vw;
+      height: auto;
+      aspect-ratio: 4/3;
+      left: 50vw;
+      top: 30vw;
+}
+
+.titulo {
+      top: 35vw;
+      left: 5vw;
+      font-size: 5vw;
+      width: 40vw;
+}
+
+.circuito {
+      top: 60vw;
+      left: 22vw;
+      font-size: 4vw;
+      width: 80vw;
+}
+
+.info {
+      top:68vw;
+      left: 8vw;
+      font-size: 4vw;
+      width: 80vw;
+}
+
+.boton {
+      top: 95vw;
+      left: 35vw;
+      font-size: 4vw;
+      width: 30vw;
+      padding: 2vw 0;
+      text-align: center;
+}
+
+.ultimos {
+      top: 110vw;
+      left: 10vw;
+      font-size: 5vw;
+}
+
+.granPremioMonaco {
+      top: 120vw;
+      left: 5vw;
+      width: 90vw;
+      height: 60vw;
+      border-radius: 3vw;
+}
+
+.tituloGran {
+      font-size: 4.5vw;
+      top: 2vw;
+}
+
+.location {
+      font-size: 3.5vw;
+      top: 8vw;
+}
+
+.carro {
+      width: 20vw;
+      top: 3vw;
+      left: 68vw;
+}
+
+
+.primero {
+      font-size: 3.8vw;
+      top: 15vw;
+      left: 8vw;
+}
+
+.segundo {
+      font-size: 3.5vw;
+      top: 29vw;
+      left: 8vw;
+}
+
+.tercero {
+      font-size: 3.5vw;
+      top: 43vw;
+      left: 8vw;
+}
+
+.max {
+      font-size: 3.5vw;
+      top: 19vw;
+      left: 8vw;
+}
+
+.red {
+      font-size: 3vw;
+      top: 23vw;
+      left: 8vw;
+}
+
+.charles {
+      font-size: 3.5vw;
+      top: 33vw;
+      left: 8vw;
+}
+
+.Ferrari {
+      font-size: 3vw;
+      top: 37vw;
+      left: 8vw;
+}
+
+.lewis {
+      font-size: 3.5vw;
+      top: 47vw;
+      left: 8vw;
+}
+
+.Mercedes {
+      font-size: 3vw;
+      top: 52vw;
+      left: 8vw;
+}
+
+.uno {
+      top: 20vw;
+      left: 50vw;
+      width: 12vw;
+}
+
+.dos {
+      top: 35vw;
+      left: 50vw;
+      width: 12vw;
+}
+
+.tres {
+      top: 48vw;
+      left: 50vw;
+      width: 12vw;
+}
+
+
+.news {
+      top: 180vw;
+      left: 10vw;
+      font-size: 5vw;
+}
+
+
+.n1 {
+      top: 200vw;
+      left: 5vw;
+      width: 90vw;
+      height: 70vw;
+      border-radius: 3vw;
+}
+
+.IMG1 {
+      width: 90vw;
+      height: 40vw;
+      object-fit: cover;
+}
+
+.fecha1 {
+      font-size: 3.5vw;
+      top: 45vw;
+      left: 5vw;
+}
+
+.text1 {
+      font-size: 4vw;
+      top: 50vw;
+      left: 5vw;
+      width: 80vw;
+}
+
+.n2 {
+      top: 280vw;
+      left: 5vw;
+      width: 90vw;
+      height: 70vw;
+      border-radius: 3vw;
+}
+
+.IMG2 {
+      width: 90vw;
+      height: 40vw;
+      object-fit: cover;
+}
+
+.fecha2 {
+      font-size: 3.5vw;
+      top: 45vw;
+      left: 5vw;
+}
+
+.text2 {
+      font-size: 4vw;
+      top: 50vw;
+      left: 5vw;
+      width: 80vw;
+}
+
+.n3 {
+      top: 360vw;
+      left: 5vw;
+      width: 90vw;
+      height: 70vw;
+      border-radius: 3vw;
+}
+
+.IMG3 {
+      width: 90vw;
+      height: 40vw;
+      object-fit: cover;
+}
+
+.fecha3 {
+      font-size: 3.5vw;
+      top: vw;
+      left: 5vw;
+}
+
+.text3 {
+      font-size: 4vw;
+      top: 50vw;
+      left: 5vw;
+      width: 80vw;
+}
+
+
+.final {
+      top: 470vw;
+      height: 15vw;
+}
+
+.pieDePagina {
+      font-size: 3.5vw;
+      padding-top: 5vw;
 }

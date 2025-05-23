@@ -3,21 +3,21 @@
 .texto{
     position: absolute;
     font-family: 'extra-ligth';
-    top: 5vw;
-    left: 45vw;
-    font-size: 3vw;
+    top: 18vw;
+    left: 40vw;
+    font-size: 5vw;
 }
 .fecha{
     position: absolute;
     font-family: 'fechas';
-    top: 9vw;
-    left: 44.5vw;
-    font-size:5vw;
+    top: 20vw;
+    left: 40vw;
+    font-size:8vw;
     font-weight: 100;
 }
 #circuitosApi{
     position: absolute;
-    top: 20vw;
+    top: 35vw;
     width: 2vw;
     height:2vw;
     display: grid;
