@@ -1,54 +1,62 @@
-# Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya
+# 🏎️ Proyecto Simulación Interactiva de Fórmula 1
 
-En este repositorio se encuentra el proyecto de F1 relizado por las estudiantes Maria Juliana Savedra Mejia y Naya Lizcano en JavaScript.
+## 📌 Introducción
+La Fórmula 1 es una disciplina que combina velocidad, estrategia y tecnología de vanguardia, generando una experiencia emocionante tanto para los espectadores como para los equipos involucrados.  
+Este proyecto tiene como objetivo desarrollar una **simulación interactiva de Fórmula 1** basada en tecnologías web modernas, permitiendo a los usuarios gestionar y personalizar su experiencia de carrera a través de un sistema dinámico de administración de **circuitos, pilotos y vehículos**.  
 
+La aplicación está construida con **HTML5, CSS3, JavaScript y Web Components**, garantizando un diseño moderno, responsivo y modular. Además, incluye funcionalidades CRUD completas y almacenamiento de datos en el navegador.
 
-| Modulo | Contenido |
-|--|--|
-| Html |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/html|
-| img |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/img|
-| Script |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/script|
-| Style |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/tree/master/style|
-| Index |https://github.com/Maria-Juliana-Saavedra-Mejia/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/blob/master/index.html|
-| Figma |https://www.figma.com/design/309jldDRzeujuJZ9ZL8CAE/F1?node-id=1-3&t=mZDO8QSXFiOiMmRe-0|
-| Link Pagina |https://maria-juliana-saavedra-mejia.github.io/Proyecto_JavaScript_S1_SaavedraMaria-LizcanoNaya/|
+---
 
+## 🎯 Objetivos del Proyecto
+El sistema busca ofrecer una plataforma interactiva donde los usuarios puedan:
 
-# **Instalación**
+- Administrar **circuitos de carrera**: agregar, editar, eliminar y buscar.  
+- Gestionar **pilotos y vehículos** con atributos personalizados (velocidad, aceleración, desgaste de neumáticos, estrategias).  
+- Configurar la simulación ajustando condiciones climáticas, reglajes y estrategias.  
+- Implementar **persistencia de datos** con LocalStorage o IndexedDB.  
 
-Para el correcto funcionamiento del presente se requiere la instalación de algún navegador web y el hipervínculo de las pagina web.
+---
 
-Para Ingesar como usuario
+## ⚙️ Tecnologías Utilizadas
+### Frontend
+- **HTML5** → estructura semántica.  
+- **CSS3** (Bootstrap o Tailwind si aplica) → diseño responsivo.  
+- **JavaScript (ES6+)** → lógica del sistema y simulación.  
 
-Usuario: Usuario
+### Gestión de Datos
+- **LocalStorage / SessionStorage** → persistencia local.  
+- **IndexedDB** (opcional) → almacenamiento avanzado.  
+- **Fetch API** → integración con APIs REST en versiones futuras.  
 
-Contraseña: campus2023
+---
 
-Para Ingresar como Administrador.
+## 🔧 Funcionalidades CRUD
+### Circuitos
+- Agregar, editar, eliminar y buscar circuitos.  
+- Ver longitud, vueltas, récords de vuelta y ganadores históricos.  
 
-Usuario: Administrador
+### Pilotos
+- Registrar nuevos pilotos (nombre, equipo, rol).  
+- Modificar o eliminar pilotos existentes.  
+- Búsqueda y visualización de estadísticas.  
 
-Contraseña: campus2023
+### Vehículos
+- Crear y personalizar autos (velocidad, aceleración, consumo, desgaste).  
+- Editar configuraciones de vehículos.  
+- Asignar pilotos a vehículos según el equipo.  
 
+---
 
-# **Explicación**
+## 📊 Estructura de Datos
+El sistema se apoya en objetos JSON predefinidos como:
 
-> [**Index**]
-Se encuentra el código fuente en HTML.
-
-> [**Html**]
-Se encuentra el código de las otras paginas usadas.
-
-> [**Img**]
-Se encuentra la carpeta en la que hay cada una de las imágenes usadas en el proyecto.
-
-> [**Style**]
-Se encuentra el código de CSS.
-
-> [**Script**]
-Se encuentra el codigo de JavaScript.
-
-> [**InfoApi**]
+- **Pilotos**  
+- **Equipos**  
+- **Circuitos**  
+- **Vehículos**  
+ 
+```
 [
   {
     "pilotos": [
@@ -1660,3 +1668,4 @@ Se encuentra el codigo de JavaScript.
     "id": "1"
   }
 ]
+```
